@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "userName": "admin",
+      "userPassword": "admin"
+    }
+  ],
+  "products": [
+    {
+      "productName": "Producto1",
+      "productDescription": "Descripción producto",
+      "productPrice": 28,
+      "productStock": 30,
+      "productCategory": "gato",
+      "productSubcategory": "chuches",
+      "productImage": "https://billiken.lat/wp-content/uploads/2023/05/monte.jpg",
+      "productOwner": "",
+      "id": "ee73"
+    },
+    {
+      "id": "f280",
+      "productName": "producto",
+      "productDescriptcion": "descripción",
+      "productPrice": "2",
+      "productStock": "4",
+      "cat1": "perro",
+      "cat2": "chuches"
+    }
+  ]
+}

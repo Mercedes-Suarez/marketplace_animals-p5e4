@@ -17,8 +17,7 @@ const apiClient = axios.create({
             return allUsers;
         } catch (error) {
             console.log("Error al obtener los usuarios:", error);
-        }
-        
+        }   
     }
 }
 

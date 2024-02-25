@@ -8,24 +8,44 @@
   ],
   "products": [
     {
-      "productName": "Producto1",
-      "productDescription": "Descripción producto",
-      "productPrice": 28,
-      "productStock": 30,
-      "productCategory": "gato",
-      "productSubcategory": "chuches",
-      "productImage": "https://billiken.lat/wp-content/uploads/2023/05/monte.jpg",
-      "productOwner": "",
-      "id": "ee73"
+      "id": "17f8",
+      "productName": "correa",
+      "productDescription": "correa con diamantes",
+      "productPrice": "110",
+      "productStock": "2",
+      "productCategory": "perro",
+      "productSubcategory": "correas",
+      "productImage": "https://www.diariodesevilla.es/2022/01/11/mascotas/huskies_1646545945_150267548_667x375.jpg"
     },
     {
-      "id": "f280",
-      "productName": "producto",
-      "productDescriptcion": "descripción",
-      "productPrice": "2",
-      "productStock": "4",
-      "cat1": "perro",
-      "cat2": "chuches"
+      "id": "33a4",
+      "productName": "chuche pollo",
+      "productDescription": "chuche de pollo para perros",
+      "productPrice": "15",
+      "productStock": "10",
+      "productCategory": "perro",
+      "productSubcategory": "chuches",
+      "productImage": "https://www.diariodesevilla.es/2022/01/11/mascotas/huskies_1646545945_150267548_667x375.jpg"
+    },
+    {
+      "id": "2e40",
+      "productName": "ratón",
+      "productDescription": "juguete de ratón gris",
+      "productPrice": "8",
+      "productStock": "6",
+      "productCategory": "gato",
+      "productSubcategory": "juguetes",
+      "productImage": "https://www.diariodesevilla.es/2022/01/11/mascotas/huskies_1646545945_150267548_667x375.jpg"
+    },
+    {
+      "id": "f7ee",
+      "productName": "cama donut",
+      "productDescription": "cama donut para perro",
+      "productPrice": "20",
+      "productStock": "37",
+      "productCategory": "perro",
+      "productSubcategory": "camas",
+      "productImage": "https://www.diariodesevilla.es/2022/01/11/mascotas/huskies_1646545945_150267548_667x375.jpg"
     }
   ]
 }

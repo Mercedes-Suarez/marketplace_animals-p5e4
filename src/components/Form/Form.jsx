@@ -83,7 +83,7 @@ function Form() {
       {errors.productStock && <span>{errors.productStock.message}</span>}
 
       <Controller
-        name="cat1"
+        name="productCategory"
         control={control}
         defaultValue=""
         render={({ field }) => (
@@ -113,7 +113,7 @@ function Form() {
       />
 
       <Controller
-        name="cat2"
+        name="productSubcategory"
         control={control}
         defaultValue=""
         render={({ field }) => (
@@ -158,6 +158,20 @@ function Form() {
               />
               Correas
             </label>
+            <br></br>
+            <label htmlFor="productImage">Image:</label>
+            <input
+            type="text"
+                id="productImage"
+                {...register("productImage", {
+                required: {
+                    value: true,
+                    message: "Image is required, please.",
+                },
+                validate: (value) => { return value ===  0 ? "Stock must be equal to  0." : true; }
+                })}
+            />
+            {errors.productImage && <span>{errors.productImage.message}</span>}
           </div>
         )}
       />

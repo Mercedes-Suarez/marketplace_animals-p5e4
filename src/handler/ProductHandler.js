@@ -1,13 +1,29 @@
-import axios from 'axios';
+import ProductService from "../service/ProductService";
 
-export const HandleSubmitProduct = (data) => {
-        axios.post('http://localhost:3000/products', data)
-            .then((response) => {
+export const ProductHandler = {
+    async getProducts() {
+        let allProducts = await ProductService.getProducts();
+        return allProducts;
+    },
+
+    async getProduct(id) {
+        let product = await ProductService.getProduct(id);
+        return product;
+    },
+
+    async submitProduct(newProduct) {
+        return ProductService.submitProduct(newProduct).then((response) => {
+          // Manejar la respuesta de forma específica al componente
+          if (response.status === 201) {
             console.log(response.data);
-            })
-            .catch((error) => {
-            console.error('Error al guardar los datos:', error);
-            });
-    }
+          } else {
+            // Error al crear el producto
+            // Mostrar mensaje de error al usuario
+            throw new Error('Error al enviar el producto');
+          }
+        });
+      }
+      
+}
 
-export default HandleSubmitProduct;
+export default ProductHandler;

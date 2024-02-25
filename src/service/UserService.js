@@ -11,9 +11,14 @@ const apiClient = axios.create({
 
  export const UserService = {
     async getUsers() {
-        let response = await apiClient.get("/users");
-        let allUsers = response.data;
-        return allUsers;
+        try {
+            let response = await apiClient.get("/users");
+            let allUsers = response.data;
+            return allUsers;
+        } catch (error) {
+            console.log("Error al obtener los usuarios:", error);
+        }
+        
     }
 }
 

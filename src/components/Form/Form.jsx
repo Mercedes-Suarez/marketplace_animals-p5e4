@@ -2,7 +2,8 @@ import { useForm, Controller } from "react-hook-form";
 import ProductHandler from "../../handler/ProductHandler";
 
 function Form() {
-  const { register, handleSubmit: pHandleSubmit, formState: { errors }, watch, control } = useForm();
+  const { register, handleSubmit: pHandleSubmit, formState: { errors }, watch, control, reset } = useForm();
+
   /*
     Some useForm() options:
     - register('nombreDelInput', {objetoDeOpciones} ): Registra e identifica cada elemento/input del formulario.
@@ -18,7 +19,8 @@ function Form() {
 
     const onSubmit =
       pHandleSubmit((data) => { 
-        ProductHandler.submitProduct(data); // Llamada directa a la función
+        ProductHandler.submitProduct(data);
+        reset(); // Llamada directa a la función
     });
 
   return (

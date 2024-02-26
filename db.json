@@ -66,6 +66,26 @@
       "productCategory": "perro",
       "productSubcategory": "correas",
       "productImage": "hfgh"
+    },
+    {
+      "id": "ba9c",
+      "productName": "ghgghj",
+      "productDescription": "tjy",
+      "productPrice": "1",
+      "productStock": "1",
+      "productCategory": "gato",
+      "productSubcategory": "juguetes",
+      "productImage": "gjk"
+    },
+    {
+      "id": "83f5",
+      "productName": "ryhrj",
+      "productDescription": "yjtyjt",
+      "productPrice": "1",
+      "productStock": "1",
+      "productCategory": "perro",
+      "productSubcategory": "chuches",
+      "productImage": "dfgd"
     }
   ]
 }

@@ -27,3 +27,4 @@ export const ProductHandler = {
 }
 
 export default ProductHandler;
+

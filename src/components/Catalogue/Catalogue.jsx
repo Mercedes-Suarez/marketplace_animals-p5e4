@@ -1,27 +1,29 @@
-// https://www.youtube.com/watch?v=B9tDYAZZxcE
-// me quedé por minuto 13
-import React, { useState, useEffect } from 'react';
-import ProductHandler from "../../handler/ProductHandler";
+import './catalogue.css'
+import Card from '../Card/Card';
 
 function Catalogue() {
-    const [products, setProducts] = useState([]);
-
-    useEffect(() => {
-        ProductHandler.getProducts().then(products => {
-            setProducts(products);
-        });
-    }, []); // Pasar un array vacío como segundo argumento para que el efecto solo se ejecute una vez al montar el componente
 
     return (
-    <div className="catalogue">
-            {products.map(product => (
-                <div key={product.id}>
-                    <h1>{product.productName}</h1>
-                    <img src={product.productImage} alt={product.productName} />
-                    <p>{product.productDescription}</p>
-                </div>
-            ))}
+        <div>
+
+            <section>
+                <h2>nuestros productos</h2>
+                <hr />
+                <button>gato</button>
+                <button>perro</button>
+                <hr />
+                <button>juguetes</button>
+                <button>chuches</button>
+                <button>camas</button>
+                <button>correas</button>
+            </section>
+
+            <section>
+               <Card/>
+            </section>
+
         </div>
+
     );
 }
 

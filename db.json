@@ -46,6 +46,26 @@
       "productCategory": "perro",
       "productSubcategory": "camas",
       "productImage": "https://www.diariodesevilla.es/2022/01/11/mascotas/huskies_1646545945_150267548_667x375.jpg"
+    },
+    {
+      "id": "4df5",
+      "productName": "srgt",
+      "productDescription": "ryjyrj",
+      "productPrice": "1",
+      "productStock": "1",
+      "productCategory": "perro",
+      "productSubcategory": "chuches",
+      "productImage": "hfgh"
+    },
+    {
+      "id": "ee12",
+      "productName": "srgt",
+      "productDescription": "ryjyrj",
+      "productPrice": "1",
+      "productStock": "1",
+      "productCategory": "perro",
+      "productSubcategory": "correas",
+      "productImage": "hfgh"
     }
   ]
 }

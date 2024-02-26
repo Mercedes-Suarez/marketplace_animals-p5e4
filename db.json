@@ -9,112 +9,84 @@
 
   "products": [
     {
-      "productImage": "/images/bedcat.png",
-      "productName": "Cama gato",
-      "productDescription": "Beige aterciopelado",
-      "productPrice": {"monto":  12, "moneda": "€"}
+      "id": "17f8",
+      "productName": "correa",
+      "productDescription": "correa con diamantes",
+      "productPrice": "110",
+      "productStock": "2",
+      "productCategory": "perro",
+      "productSubcategory": "correas",
+      "productImage": "https://www.diariodesevilla.es/2022/01/11/mascotas/huskies_1646545945_150267548_667x375.jpg"
     },
     {
-      "productImage": "/images/bedcat2.png",
-      "productName": "Cama gatito",
-      "productDescription": "Lavable para mascotas",
-      "productPrice": {"monto":  9.5, "moneda": "€"}
+      "id": "33a4",
+      "productName": "chuche pollo",
+      "productDescription": "chuche de pollo para perros",
+      "productPrice": "15",
+      "productStock": "10",
+      "productCategory": "perro",
+      "productSubcategory": "chuches",
+      "productImage": "https://www.diariodesevilla.es/2022/01/11/mascotas/huskies_1646545945_150267548_667x375.jpg"
     },
     {
-      "productImage": "/images/beddog.png",
-      "productName": "Cama perro",
-      "productDescription": "Cómoda y resistente",
-      "productPrice": {"monto":  14, "moneda": "€"}
+      "id": "2e40",
+      "productName": "ratón",
+      "productDescription": "juguete de ratón gris",
+      "productPrice": "8",
+      "productStock": "6",
+      "productCategory": "gato",
+      "productSubcategory": "juguetes",
+      "productImage": "https://www.diariodesevilla.es/2022/01/11/mascotas/huskies_1646545945_150267548_667x375.jpg"
     },
     {
-      "productImage": "/images/beddog2.png",
-      "productName": "Cama perro",
-      "productDescription": "Lavable y confortable",
-      "productPrice": {"monto":  11.75, "moneda": "€"}
+      "id": "f7ee",
+      "productName": "cama donut",
+      "productDescription": "cama donut para perro",
+      "productPrice": "20",
+      "productStock": "37",
+      "productCategory": "perro",
+      "productSubcategory": "camas",
+      "productImage": "https://www.diariodesevilla.es/2022/01/11/mascotas/huskies_1646545945_150267548_667x375.jpg"
     },
     {
-      "productImage": "/images/grooming.png",
-      "productName": "Cepillo",
-      "productDescription": "Suave y resistente",
-      "productPrice": {"monto":  5, "moneda": "€"}
+      "id": "4df5",
+      "productName": "srgt",
+      "productDescription": "ryjyrj",
+      "productPrice": "1",
+      "productStock": "1",
+      "productCategory": "perro",
+      "productSubcategory": "chuches",
+      "productImage": "hfgh"
     },
     {
-      "productImage": "/images/grooming2.png",
-      "productName": "Cepillo grooming",
-      "productDescription": "Madera natural",
-      "productPrice": {"monto":  7.25, "moneda": "€"}
+      "id": "ee12",
+      "productName": "srgt",
+      "productDescription": "ryjyrj",
+      "productPrice": "1",
+      "productStock": "1",
+      "productCategory": "perro",
+      "productSubcategory": "correas",
+      "productImage": "hfgh"
     },
     {
-      "productImage": "/images/grooming3.png",
-      "productName": "Guante grooming",
-      "productDescription": "Fácil de usar",
-      "productPrice": {"monto":  4.75, "moneda": "€"}
+      "id": "ba9c",
+      "productName": "ghgghj",
+      "productDescription": "tjy",
+      "productPrice": "1",
+      "productStock": "1",
+      "productCategory": "gato",
+      "productSubcategory": "juguetes",
+      "productImage": "gjk"
     },
     {
-      "productImage": "/images/grooming4.png",
-      "productName": "Peine",
-      "productDescription": "Compacto y ergonómico",
-      "productPrice": {"monto":  6.90, "moneda": "€"}
-    },
-    {
-      "productImage": "/images/leash.png",
-      "productName": "Correa",
-      "productDescription": "Resistente y ajustable",
-      "productPrice": {"monto":  8, "moneda": "€"}
-    },
-    {
-      "productImage": "/images/leash2.png",
-      "productName": "Correa reflectante",
-      "productDescription": "Segura y visible",
-      "productPrice": {"monto":  10.5, "moneda": "€"}
-    },
-    {
-      "productImage": "/images/leash3.png",
-      "productName": "Correa ligera",
-      "productDescription": "Fácil de transportar",
-      "productPrice": {"monto":  7, "moneda": "€"}
-    },
-    {
-      "productImage": "/images/leash4.png",
-      "productName": "Correa flexible",
-      "productDescription": "Para mayor comodidad",
-      "productPrice": {"monto":  9.25, "moneda": "€"}
-    },
-    {
-      "productImage": "/images/toy_cat.png",
-      "productName": "Juguete gato",
-      "productDescription": "Divertido y entretenido",
-      "productPrice": {"monto":  3.99, "moneda": "€"}
-    },
-    {
-      "productImage": "/images/toy_cat2.png",
-      "productName": "Juguete interactivo",
-      "productDescription": "Para estimular el juego",
-      "productPrice": {"monto":  6.75, "moneda": "€"}
-    },
-    {
-      "productImage": "/images/toy_cat3.png",
-      "productName": "Pelota suave",
-      "productDescription": "Para horas de diversión",
-      "productPrice": {"monto":  4.25, "moneda": "€"}
-    },
-    {
-      "productImage": "/images/toy_cat4.png",
-      "productName": "Ratón de peluche",
-      "productDescription": "Para gatos curiosos",
-      "productPrice": {"monto":  5.60, "moneda": "€"}
-    },
-    {
-      "productImage": "/images/toy_dog.png",
-      "productName": "Pelota resistente",
-      "productDescription": "Para perros activos",
-      "productPrice": {"monto":  7.20, "moneda": "€"}
-    },
-    {
-      "productImage": "/images/toy_dog2.png",
-      "productName": "Hueso interactivo",
-      "productDescription": "Para juego y limpieza dental",
-      "productPrice": {"monto":  8.99, "moneda": "€"}
+      "id": "83f5",
+      "productName": "ryhrj",
+      "productDescription": "yjtyjt",
+      "productPrice": "1",
+      "productStock": "1",
+      "productCategory": "perro",
+      "productSubcategory": "chuches",
+      "productImage": "dfgd"
     }
  
   ]

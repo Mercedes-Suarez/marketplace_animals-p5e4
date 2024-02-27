@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+footer {
+    width: 100%;
+}
+
+.bodyhome {
+    background-color: #FDFCF7;
+    width: auto;
+    font-family: "Inria Sans", sans-serif;
+    color: #5C4B51;
+
+}
+
+.homeServices {
+    display: flex;
+    flex-direction: row;
+    margin-top: -4px;
+}
+
+.infoServices {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;    
+    margin-left: 94px;
+    margin-right: 124px;
+    align-self: center;
+
+}
+
+.homeProducts {
+    display: flex;
+    flex-direction: row;
+}
+
+.infoProducts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 94px;
+    margin-right: 124px;
+    align-self: center;
+}
+
+.title2Home {
+    font-size: 45px;
+    margin-block-end: auto;
+    font-family: "Inria Sans", sans-serif;
+}
+
+.textbody {
+    font-size: 15px;
+    font-family: "Inria Sans", sans-serif;
+}
+
+.buttonbox {
+    background-color: #EE6163;
+    width: 150px;
+    border-radius: 25px; 
+    height: 39px;
+    text-align: center;
+    align-content: center;
+    padding-top: 14px;
+    color: white;
+}

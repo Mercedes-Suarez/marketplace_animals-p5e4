@@ -8,6 +8,10 @@ function Catalogue() {
         <div>
 
             <section>
+                <img/>
+            </section>
+
+            <section>
                 <h2>nuestros productos</h2>
                 <hr />
                 <button>gato</button>

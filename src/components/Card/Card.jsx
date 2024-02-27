@@ -13,10 +13,17 @@ function Card() {
         <div className="product-container">
           {products.map((product, index) => (
             <div key={index} className="card">
-              <img
-                src={product.productImage}
-                alt={product.productName}
-              />
+                <a href="#">                    
+                    <div className='image-container'>
+                        <img
+                        src={product.productImage}
+                        alt={product.productName}
+                        />
+                        <div class="overlay">
+                            Ver más
+                        </div> 
+                    </div>
+                </a>
               <div className="product-details">
                 <h3 className="product-title">{product.productName}</h3>
             <p className="product-description">{product.productDescription}</p>

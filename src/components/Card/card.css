@@ -16,7 +16,35 @@
     width: 100%;
     height: auto;
     border-radius: 15px;
-    margin-bottom: 10px; 
+  }
+
+  .image-container {
+    position: relative;
+    width:  auto; /* Ajusta el tamaño según sea necesario */
+    height:  auto; /* Ajusta el tamaño según sea necesario */
+  }
+
+  .image-container .overlay {
+    position: absolute;
+    top:  0;
+    left:  0;
+    width:  100%;
+    height:  99%;
+    background: rgba(0,  0,  0,  0.5); /* Esto oscurece la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity .8s ease;
+    color: white; /* Color del texto */
+    text-decoration: none;
+    font-size:  20px;
+  }
+
+  .image-container:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
   }
   
   .product-details {

@@ -1,4 +1,3 @@
-import React from 'react';
 import './catalogue.css'
 import Card from '../Card/Card';
 

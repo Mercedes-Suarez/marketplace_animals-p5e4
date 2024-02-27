@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+.header-catalogue{
+    width: 100vw;
+   }
+
+.catalogue-body button {
+    font-family: 'Montserrat', sans-serif;
+    color: #5C4B51;
+    font-size:  16px;
+}
+
+.catalogue-body{
+    font-family: 'Montserrat', sans-serif;
+    color: #5C4B51;
+    text-align: center;
+}
+
+.filters-container{
+  
+}
+
+#filters-title{
+    font-family: "Inria Sans", sans-serif;
+    font-size:  36px;
+    font-weight:  400;
+    color: #5C4B51;
+    text-align: center;
+}
+
+.filters-lines{
+   width: 1030px;
+   border: none;
+   height:  1px; 
+   background-color:#5C4B51;
+}
+
+.categories-buttons-container{
+    display: flex;  
+    justify-content: center;
+    gap: 40px;
+}
+
+.categories-buttons{
+    background-color: transparent;
+    color: #5C4B51;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.subcategories-buttons-container{
+    display: flex;  
+    justify-content: center;
+    gap: 40px;
+}
+
+.subcategories-buttons{
+    background-color: #F2B469;
+    font-weight:  600;
+    color: #5C4B51;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}

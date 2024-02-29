@@ -23,6 +23,11 @@ function Home() {
       <div className="bodyhome">
         <section className="homeHeader">
           <img src="images\imageHeader.png" alt="Portada" />
+          <article className="infoHeader">
+          Un mundo de mimos y cuidados para tus peludos amigos:
+          <br/>
+          ¡Encuentra todo en nuestro marketplace para mascotas!
+          </article>
         </section>
         <section className="homeServices">
           <img src="public\images\imgServices.png" alt="Servicios" />

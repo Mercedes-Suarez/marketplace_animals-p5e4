@@ -1,0 +1,98 @@
+ .form-container {
+    width: 80%;
+    width: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30%;
+ }
+
+ .input-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 50%;
+    margin-right: 300px;
+ }
+
+ .form-input {
+    align-items: center;
+    display: flex;
+    margin-bottom: 15px;
+    width: 100%;
+ }
+
+ .form-input label {
+    margin-bottom: 5px;
+ }
+
+ .input-container {
+    display: flex;
+    gap: 10px;
+ }
+
+ input[type="radio"] {
+    margin-right: 5px;
+ }
+
+ input,
+ textarea,
+ select {
+    flex: 1;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 4px;
+ }
+
+ .form-categories {
+   width: 600px;
+ }
+ 
+ .form-cat1,
+ .form-cat2 {
+   display: flex;
+ }
+
+ .form-cat2 {
+   flex: 1;
+ }
+
+ .form-cat1 {
+   margin-bottom: 10px;
+   margin-top: 10px;
+   gap: 69px;
+ }
+
+ .form-cat2 label{
+   margin-bottom: 15px;
+ }
+
+ .form-cat2 input{
+   margin-left: 73px;
+ }
+ 
+ .form-cat1 label{
+   padding-right: 22px;
+ }
+
+ .form-cat1 label,
+ .form-cat2 label {
+   display: flex;
+   align-items: center;
+ }
+
+ .form-button {
+    background-color: #8EBEB2;
+    color: white;
+    padding: 10px 15px;
+    font-size: 15px;
+    width: 200px;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-top: 10px;
+    margin-left: 400px;
+ }

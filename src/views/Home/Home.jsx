@@ -14,7 +14,7 @@ function Home() {
     return (
         <>
             <Navbar />
-            <img src="public\images\portadaHome.png" alt="Portada" />
+            <img src="images\portadaHome.png" alt="Portada" />
             <Catalogue />
             <Footer />
         </>

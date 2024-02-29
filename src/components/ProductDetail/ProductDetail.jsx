@@ -1,10 +1,11 @@
 
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+
+import Breadcrumbs from '../ProductDetail/Breadcrumbs.jsx';
+
 import './productDetail.css';
-
-
-// https://reactrouter.com/en/main/hooks/use-matches#breadcrumbs
+import '../../index.css';
 
 function ProductDetail() {
   const location = useLocation();
@@ -22,8 +23,13 @@ function ProductDetail() {
       <section className="product-detail-info">
         <Breadcrumbs />
         <h2>{product.productName}</h2>
-        <p>{product.productDescription}</p>
         <p>{product.productPrice.monto} {product.productPrice.moneda}</p>
+        <hr></hr>
+        <p>{product.productDescription}</p>
+        <section className="buttons">
+          <button className="add-to-cart-btn">añadir al carrito</button>
+          <button className='stock-btn'>{product.productStock} uds en stock</button>
+        </section>
       </section>
     </section>
     </>

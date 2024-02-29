@@ -1,6 +1,7 @@
 import { useForm, Controller } from "react-hook-form";
 import ProductHandler from "../../handler/ProductHandler";
 import "./form.css";
+import { Cloudinary } from "@cloudinary/url-gen";
 
 function Form() {
   const { register, handleSubmit: pHandleSubmit, formState: { errors }, watch, control, reset } = useForm();
@@ -18,6 +19,22 @@ function Form() {
     - setValue: Propiedad/función que permite establecer el valor de un input.
     */
 
+  // const [imageUrl, setImageUrl] = useState('');
+
+  // const handleUploadClick = () => {
+  //   const widget = window.cloudinary.createUploadWidget({
+  //     cloudName: 'lerolore',
+  //     uploadPreset: 'lore',
+  //   }, (error, result) => {
+  //     if (result.event === 'success') {
+  //       const url = result.info.secure_url;
+  //       console.log(url);
+  //       setImageUrl(url);
+  //     }
+  //   })
+  //   widget.open();
+  // };
+
   const onSubmit =
     pHandleSubmit((data) => {
       ProductHandler.submitProduct(data);
@@ -32,6 +49,7 @@ function Form() {
         <label htmlFor="productName"></label>
         <input
           type="text"
+          placeholder="Nombre del producto"
           id="productName"
           {...register("productName", {
             required: {
@@ -51,6 +69,7 @@ function Form() {
         <label htmlFor="productDescription"></label>
         <input
           type="text"
+          placeholder="Descripción del producto"
           id="productDescription"
           {...register("productDescription", {
             required: {
@@ -69,6 +88,7 @@ function Form() {
           <label htmlFor="productPrice"></label>
           <input
             type="number"
+            placeholder="Precio"
             id="productPrice"
             {...register("productPrice", {
               required: {
@@ -84,6 +104,7 @@ function Form() {
           <label htmlFor="productStock"></label>
           <input
             type="number"
+            placeholder="Stock"
             id="productStock"
             {...register("productStock", {
               required: {
@@ -180,10 +201,12 @@ function Form() {
       />
       </div>
 
-      <div className="form-input">
+      {/* <div className="form-input">
         <label htmlFor="productImage"></label>
         <input
-          type="text"
+          value={imageUrl}
+          type="file"
+          placeholder="Imágenes"
           id="productImage"
           {...register("productImage", {
             required: {
@@ -194,9 +217,16 @@ function Form() {
           })}
         />
         {errors.productImage && <span>{errors.productImage.message}</span>}
+        <button onClick={handleUploadClick()}>Seleccionar imagen</button>
       </div>
 
-      {/* acá falta el input foto con Cloudinary */}
+      import {Cloudinary} from "@cloudinary/url-gen"; */}
+
+{/* const App = () => {
+  const cld = new Cloudinary({cloud: {cloudName: 'dchd7k6oh'}});
+}; */}
+
+
 
       <button className="form-button" type="submit">añadir producto</button>
 

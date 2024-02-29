@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+.footerbrown {
+    background-color: #5C4B51;
+    font-family: "Inria Sans", sans-serif;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 120px;
+}
+
+.linksfooter {
+    display: flex;
+    flex-direction: row;
+    line-height: 5px;
+
+}
+
+.legal {
+    line-height: 5px;
+}
+
+.footerred {
+    background-color: #EE6163;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Inria Sans", sans-serif;
+    height: 35px;
+    margin-top:-21px;
+}

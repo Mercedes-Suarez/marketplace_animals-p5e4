@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
-=======
 // Desk_Home_General (Home)
-
 // Componente Navbar (con renderizado condicional)
 // Trozo decorativo de fotos y texto
 // Componente Catálogo
@@ -9,7 +6,6 @@
 // Component Login (MODAL)
 
 import Navbar from "../../components/Navbar/Navbar";
-import Catalogue from "../../components/Catalogue/Catalogue";
 import Footer from "../../components/Footer/Footer";
 import { useNavigate } from "react-router-dom";
 import "./home.css";
@@ -62,4 +58,3 @@ function Home() {
 }
 
 export default Home;
->>>>>>> Stashed changes

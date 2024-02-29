@@ -16,6 +16,7 @@ footer {
     display: flex;
     flex-direction: row;
     margin-top: -4px;
+    background-color: #F2B469;
 }
 
 .infoServices {
@@ -37,7 +38,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin-left: 94px;
+    margin-left: 124px;
     margin-right: 124px;
     align-self: center;
 }

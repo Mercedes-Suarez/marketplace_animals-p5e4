@@ -1,18 +1,27 @@
 
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 
 function ProductDetail() {
   const location = useLocation();
-  console.log(location);
   const product = location.state.product;
 
   return (
-    <div>
-      <h2>{product.name}</h2>
-      <p>{product.description}</p>
-      {/* Muestra más detalles del producto aquí */}
-    </div>
+    <>
+    <Navbar />
+    <section className='product-detail'>
+      <h2>{product.productName}</h2>
+      <img
+        src={product.productImage}
+        alt={product.productName}
+      />
+      <p>{product.productDescription}</p>
+      <p>{product.productPrice.monto} {product.productPrice.moneda}</p>
+    </section>
+    <Footer />
+    </>
   );
 }
 

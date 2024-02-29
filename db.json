@@ -6,116 +6,186 @@
       "userPassword": "admin"
     }
   ],
-
   "products": [
     {
       "productImage": "/images/bedcat.png",
       "productName": "Cama gato",
       "productDescription": "Beige aterciopelado",
-      "productPrice": {"monto":  12, "moneda": "€"}
+      "productPrice": {
+        "monto": 12,
+        "moneda": "€"
+      },
+      "id": "ffcf"
     },
     {
       "productImage": "/images/bedcat2.png",
       "productName": "Cama gatito",
       "productDescription": "Lavable para mascotas",
-      "productPrice": {"monto":  9.5, "moneda": "€"}
+      "productPrice": {
+        "monto": 9.5,
+        "moneda": "€"
+      },
+      "id": "6ffa"
     },
     {
       "productImage": "/images/beddog.png",
       "productName": "Cama perro",
       "productDescription": "Cómoda y resistente",
-      "productPrice": {"monto":  14, "moneda": "€"}
+      "productPrice": {
+        "monto": 14,
+        "moneda": "€"
+      },
+      "id": "6ac9"
     },
     {
       "productImage": "/images/beddog2.png",
       "productName": "Cama perro",
       "productDescription": "Lavable y confortable",
-      "productPrice": {"monto":  11.75, "moneda": "€"}
+      "productPrice": {
+        "monto": 11.75,
+        "moneda": "€"
+      },
+      "id": "4b50"
     },
     {
       "productImage": "/images/grooming.png",
       "productName": "Cepillo",
       "productDescription": "Suave y resistente",
-      "productPrice": {"monto":  5, "moneda": "€"}
+      "productPrice": {
+        "monto": 5,
+        "moneda": "€"
+      },
+      "id": "2f83"
     },
     {
       "productImage": "/images/grooming2.png",
       "productName": "Cepillo grooming",
       "productDescription": "Madera natural",
-      "productPrice": {"monto":  7.25, "moneda": "€"}
+      "productPrice": {
+        "monto": 7.25,
+        "moneda": "€"
+      },
+      "id": "c969"
     },
     {
       "productImage": "/images/grooming3.png",
       "productName": "Guante grooming",
       "productDescription": "Fácil de usar",
-      "productPrice": {"monto":  4.75, "moneda": "€"}
+      "productPrice": {
+        "monto": 4.75,
+        "moneda": "€"
+      },
+      "id": "abf9"
     },
     {
       "productImage": "/images/grooming4.png",
       "productName": "Peine",
       "productDescription": "Compacto y ergonómico",
-      "productPrice": {"monto":  6.90, "moneda": "€"}
+      "productPrice": {
+        "monto": 6.9,
+        "moneda": "€"
+      },
+      "id": "6031"
     },
     {
       "productImage": "/images/leash.png",
       "productName": "Correa",
       "productDescription": "Resistente y ajustable",
-      "productPrice": {"monto":  8, "moneda": "€"}
+      "productPrice": {
+        "monto": 8,
+        "moneda": "€"
+      },
+      "id": "ca82"
     },
     {
       "productImage": "/images/leash2.png",
       "productName": "Correa reflectante",
       "productDescription": "Segura y visible",
-      "productPrice": {"monto":  10.5, "moneda": "€"}
+      "productPrice": {
+        "monto": 10.5,
+        "moneda": "€"
+      },
+      "id": "c4d8"
     },
     {
       "productImage": "/images/leash3.png",
       "productName": "Correa ligera",
       "productDescription": "Fácil de transportar",
-      "productPrice": {"monto":  7, "moneda": "€"}
+      "productPrice": {
+        "monto": 7,
+        "moneda": "€"
+      },
+      "id": "be5c"
     },
     {
       "productImage": "/images/leash4.png",
       "productName": "Correa flexible",
       "productDescription": "Para mayor comodidad",
-      "productPrice": {"monto":  9.25, "moneda": "€"}
+      "productPrice": {
+        "monto": 9.25,
+        "moneda": "€"
+      },
+      "id": "cf78"
     },
     {
       "productImage": "/images/toy_cat.png",
       "productName": "Juguete gato",
       "productDescription": "Divertido y entretenido",
-      "productPrice": {"monto":  3.99, "moneda": "€"}
+      "productPrice": {
+        "monto": 3.99,
+        "moneda": "€"
+      },
+      "id": "f90f"
     },
     {
       "productImage": "/images/toy_cat2.png",
       "productName": "Juguete interactivo",
       "productDescription": "Para estimular el juego",
-      "productPrice": {"monto":  6.75, "moneda": "€"}
+      "productPrice": {
+        "monto": 6.75,
+        "moneda": "€"
+      },
+      "id": "b4ea"
     },
     {
       "productImage": "/images/toy_cat3.png",
       "productName": "Pelota suave",
       "productDescription": "Para horas de diversión",
-      "productPrice": {"monto":  4.25, "moneda": "€"}
+      "productPrice": {
+        "monto": 4.25,
+        "moneda": "€"
+      },
+      "id": "479c"
     },
     {
       "productImage": "/images/toy_cat4.png",
       "productName": "Ratón de peluche",
       "productDescription": "Para gatos curiosos",
-      "productPrice": {"monto":  5.60, "moneda": "€"}
+      "productPrice": {
+        "monto": 5.6,
+        "moneda": "€"
+      },
+      "id": "169d"
     },
     {
       "productImage": "/images/toy_dog.png",
       "productName": "Pelota resistente",
       "productDescription": "Para perros activos",
-      "productPrice": {"monto":  7.20, "moneda": "€"}
+      "productPrice": {
+        "monto": 7.2,
+        "moneda": "€"
+      },
+      "id": "e604"
     },
     {
       "productImage": "/images/toy_dog2.png",
       "productName": "Hueso interactivo",
       "productDescription": "Para juego y limpieza dental",
-      "productPrice": {"monto":  8.99, "moneda": "€"}
+      "productPrice": {
+        "monto": 8.99,
+        "moneda": "€"
+      },
+      "id": "9cc1"
     }
- 
   ]
 }

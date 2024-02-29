@@ -14,13 +14,13 @@ function Card() {
     <div className="product-container">
       {products.map((product, index) => (
         <div key={index} className="card">
-          <Link to={{ pathname: `/product/${product.id}`, state: { product } }}>
+          <Link to={`/products/${product.id}`} state={{ product }}>            
             <div className='image-container'>
               <img
                 src={product.productImage}
                 alt={product.productName}
               />
-              <div class="overlay">
+              <div className="overlay">
                 Ver más
               </div>
             </div>

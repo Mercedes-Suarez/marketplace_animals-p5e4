@@ -1,22 +1,25 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; // Asegúrate de importar Link de 'react-router-dom'
 import ProductHandler from "../../handler/ProductHandler";
 import './card.css'
 
 function Card({ selectedCategory, selectedSubcategory }) {
-    const [products, setProducts] = useState([]);
-    const [liked, setLiked] = useState(false);
+ const [products, setProducts] = useState([]);
+ const [liked, setLiked] = useState(false);
   
-    useEffect(() => {
-        // Solo necesitas este useEffect para obtener y filtrar los productos
-        ProductHandler.getProducts(selectedCategory, selectedSubcategory).then(filteredProducts => {
-            setProducts(filteredProducts);
-        });
-    }, [selectedCategory, selectedSubcategory]); // Dependencias del efecto
+ useEffect(() => {
+    // Solo necesitas este useEffect para obtener y filtrar los productos
+    ProductHandler.getProducts(selectedCategory, selectedSubcategory).then(filteredProducts => {
+      setProducts(filteredProducts);
+    });
+ }, [selectedCategory, selectedSubcategory]); // Dependencias del efecto
 
-    return (
-        <div className="product-container">
-          {products.map((product, index) => (
-            <div key={index} className="card">
+ return (
+    <div className="product-container">
+      {products.map((product, index) => (
+        <div key={index} className="card">
+          <Link to={`/products/${product.id}`} state={{ product }}>            
+            <div className='image-container'>
               <img
                 src={product.productImage}
                 alt={product.productName}
@@ -27,7 +30,7 @@ function Card({ selectedCategory, selectedSubcategory }) {
                 <div className="price-details">
                  <span className="price">{product.productPrice.monto} {product.productPrice.moneda}</span>
                  <button className="like-button">
-                    <img src="/images/heart-icon.svg" alt="Me gusta" id="heart-icon" className="heart-icon" />
+                    <img src="/images/heart-icon.svg" alt="Me gusta" id="heart-icon" />
                  </button>
                 </div>
               </div>
@@ -37,9 +40,11 @@ function Card({ selectedCategory, selectedSubcategory }) {
                 </button>
               </div>
             </div>
-          ))}
+          </Link>
         </div>
-      );
+      ))}
+    </div>
+ );
 }
 
 export default Card;

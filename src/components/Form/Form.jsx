@@ -28,6 +28,7 @@ function Form() {
       <label htmlFor="productName">Product name:</label>
       <input
         type="text"
+        placeholder="Mete nombre"
         id="productName"
         {...register("productName", {
           required: {

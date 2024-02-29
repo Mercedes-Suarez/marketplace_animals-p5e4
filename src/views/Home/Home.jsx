@@ -22,7 +22,7 @@ function Home() {
       <Navbar />
       <div className="bodyhome">
         <section className="homeHeader">
-          <img src="public\images\portadaHome.png" alt="Portada" />
+          <img src="images\imageHeader.png" alt="Portada" />
         </section>
         <section className="homeServices">
           <img src="public\images\imgServices.png" alt="Servicios" />

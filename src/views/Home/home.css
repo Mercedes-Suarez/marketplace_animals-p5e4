@@ -12,6 +12,10 @@ footer {
 
 }
 
+.homeHeader img {
+    width: 100%;
+}
+
 .homeServices {
     display: flex;
     flex-direction: row;

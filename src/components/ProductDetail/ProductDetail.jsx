@@ -1,10 +1,6 @@
 
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-
-import Navbar from '../Navbar/Navbar';
-import Footer from '../Footer/Footer';
-import Breadcrumbs from './Breadcrumbs';
 import './productDetail.css';
 
 
@@ -16,7 +12,6 @@ function ProductDetail() {
 
   return (
     <>
-    <Navbar />
     <section className='product-detail'>
       <section className="product-detail-image">
         <img
@@ -31,7 +26,6 @@ function ProductDetail() {
         <p>{product.productPrice.monto} {product.productPrice.moneda}</p>
       </section>
     </section>
-    <Footer />
     </>
   );
 }

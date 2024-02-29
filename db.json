@@ -15,6 +15,8 @@
         "monto": 12,
         "moneda": "€"
       },
+      "productCategory": "gato",
+      "productSubcategory": "camas",
       "id": "ffcf"
     },
     {
@@ -25,6 +27,8 @@
         "monto": 9.5,
         "moneda": "€"
       },
+      "productCategory": "gato",
+      "productSubcategory": "camas",
       "id": "6ffa"
     },
     {
@@ -35,6 +39,8 @@
         "monto": 14,
         "moneda": "€"
       },
+      "productCategory": "perro",
+      "productSubcategory": "camas",
       "id": "6ac9"
     },
     {
@@ -45,6 +51,8 @@
         "monto": 11.75,
         "moneda": "€"
       },
+      "productCategory": "perro",
+      "productSubcategory": "camas",
       "id": "4b50"
     },
     {
@@ -55,6 +63,8 @@
         "monto": 5,
         "moneda": "€"
       },
+      "productCategory": "gato",
+      "productSubcategory": "juguetes",
       "id": "2f83"
     },
     {
@@ -65,6 +75,8 @@
         "monto": 7.25,
         "moneda": "€"
       },
+      "productCategory": "gato",
+      "productSubcategory": "juguetes",
       "id": "c969"
     },
     {
@@ -75,6 +87,8 @@
         "monto": 4.75,
         "moneda": "€"
       },
+      "productCategory": "gato",
+      "productSubcategory": "juguetes",
       "id": "abf9"
     },
     {
@@ -85,6 +99,8 @@
         "monto": 6.9,
         "moneda": "€"
       },
+      "productCategory": "gato",
+      "productSubcategory": "juguetes",
       "id": "6031"
     },
     {
@@ -95,6 +111,8 @@
         "monto": 8,
         "moneda": "€"
       },
+      "productCategory": "perro",
+      "productSubcategory": "correas",
       "id": "ca82"
     },
     {
@@ -105,6 +123,8 @@
         "monto": 10.5,
         "moneda": "€"
       },
+      "productCategory": "perro",
+      "productSubcategory": "correas",
       "id": "c4d8"
     },
     {
@@ -115,6 +135,8 @@
         "monto": 7,
         "moneda": "€"
       },
+      "productCategory": "perro",
+      "productSubcategory": "correas",
       "id": "be5c"
     },
     {
@@ -125,6 +147,8 @@
         "monto": 9.25,
         "moneda": "€"
       },
+      "productCategory": "perro",
+      "productSubcategory": "correas",
       "id": "cf78"
     },
     {
@@ -135,6 +159,8 @@
         "monto": 3.99,
         "moneda": "€"
       },
+      "productCategory": "gato",
+      "productSubcategory": "juguetes",
       "id": "f90f"
     },
     {
@@ -145,6 +171,8 @@
         "monto": 6.75,
         "moneda": "€"
       },
+      "productCategory": "gato",
+      "productSubcategory": "juguetes",
       "id": "b4ea"
     },
     {
@@ -155,6 +183,8 @@
         "monto": 4.25,
         "moneda": "€"
       },
+      "productCategory": "gato",
+      "productSubcategory": "juguetes",
       "id": "479c"
     },
     {
@@ -165,6 +195,8 @@
         "monto": 5.6,
         "moneda": "€"
       },
+      "productCategory": "gato",
+      "productSubcategory": "juguetes",
       "id": "169d"
     },
     {
@@ -175,6 +207,8 @@
         "monto": 7.2,
         "moneda": "€"
       },
+      "productCategory": "perro",
+      "productSubcategory": "juguetes",
       "id": "e604"
     },
     {
@@ -185,7 +219,9 @@
         "monto": 8.99,
         "moneda": "€"
       },
+      "productCategory": "perro",
+      "productSubcategory": "juguetes",
       "id": "9cc1"
     }
-  ]
+]
 }

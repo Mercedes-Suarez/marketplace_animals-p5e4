@@ -20,7 +20,7 @@ function Card() {
                 src={product.productImage}
                 alt={product.productName}
               />
-              <div class="overlay">
+              <div className="overlay">
                 Ver más
               </div>
             </div>

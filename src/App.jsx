@@ -11,9 +11,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/catalogueView" element={<CatalogueView />} />
+        <Route path="/catalogueView" element={<CatalogueView />} handle={{crumb : () => <span>catálogo</span>}}/>
         <Route path="/myProducts" element={<Management />} />
-        <Route path="/products/:id" element={<ProductDetail />} />
+        <Route path="/products/:id" element={<ProductDetail />} handle={{crumb : () => <span>detalle de producto</span>}}/>
       </Routes>
     
     </Router>

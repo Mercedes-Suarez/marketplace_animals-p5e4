@@ -1,8 +1,10 @@
 
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
+import Breadcrumbs from './Breadcrumbs';
 import './productDetail.css';
 
 
@@ -23,6 +25,7 @@ function ProductDetail() {
         />
       </section>
       <section className="product-detail-info">
+        <Breadcrumbs />
         <h2>{product.productName}</h2>
         <p>{product.productDescription}</p>
         <p>{product.productPrice.monto} {product.productPrice.moneda}</p>

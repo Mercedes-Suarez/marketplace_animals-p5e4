@@ -1,7 +1,7 @@
 import { useForm, Controller } from "react-hook-form";
 import ProductHandler from "../../handler/ProductHandler";
 import "./form.css";
-import { Cloudinary } from "@cloudinary/url-gen";
+// import { Cloudinary } from "@cloudinary/url-gen";
 
 function Form() {
   const { register, handleSubmit: pHandleSubmit, formState: { errors }, watch, control, reset } = useForm();
@@ -74,7 +74,7 @@ function Form() {
           {...register("productDescription", {
             required: {
               value: true,
-              message: "E-mail is required, please.",
+              message: "ProductDescription is required, please.",
             },
           })}
         />

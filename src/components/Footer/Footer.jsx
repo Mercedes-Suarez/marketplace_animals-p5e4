@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./footer.css";
 
 function Footer() {
@@ -8,8 +9,8 @@ function Footer() {
           <div className="pagesfooter">
             <p className="titlefooter">páginas</p>
             <br />
-            <p>home</p>
-            <p>catálogo</p>
+            <p><NavLink className="myNavLink" activeClassName="myActiveNavLink" to="/">home</NavLink></p>
+            <NavLink className="myNavLink" activeClassName="myActiveNavLink" to="/catalogueView">catálogo</NavLink>
           </div>
           <div className="accessfooter">
             <p className="titlefooter">accesos</p>

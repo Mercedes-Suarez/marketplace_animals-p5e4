@@ -11,6 +11,11 @@
 
 }
 
+.myNavLink {
+    color: white;
+    text-decoration: none;
+}
+
 .linksfooter {
     display: flex;
     flex-direction: row;

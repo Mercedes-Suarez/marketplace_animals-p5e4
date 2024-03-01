@@ -18,8 +18,8 @@ footer {
 
 .infoHeader {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center; 
+    align-items: center; 
     height: 292px;
     background-color: #8EBEB2;
     background-image: url("images/pattern.png");

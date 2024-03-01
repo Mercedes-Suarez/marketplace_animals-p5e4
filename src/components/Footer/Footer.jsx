@@ -6,13 +6,13 @@ function Footer() {
       <section className="footerbrown">
         <section className="linksfooter">
           <div className="pagesfooter">
-            <p>páginas</p>
+            <p className="titlefooter">páginas</p>
             <br />
             <p>home</p>
             <p>catálogo</p>
           </div>
           <div className="accessfooter">
-            <p>accesos</p>
+            <p className="titlefooter">accesos</p>
             <br />
             <p>login</p>
             <p>registro</p>

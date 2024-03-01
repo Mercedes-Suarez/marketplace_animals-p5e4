@@ -9,15 +9,19 @@ function Navbar() {
 
   return (
     <nav className="navbar">
+
       <img src="images\logooscuro.svg" alt="logo" />
+
       <section className="menuNavbar">
-        <NavLink activeClassName="active" to="/">home</NavLink>
-        <NavLink activeClassName="active" to="/catalogueView">catálogo</NavLink>
+        <NavLink className="myNavLink" activeClassName="myActiveNavLink" to="/">home</NavLink>
+        <NavLink className="myNavLink" activeClassName="myActiveNavLink" to="/catalogueView">catálogo</NavLink>
       </section>
+
       <section className="loginOptions">
         <img src="images\userIcon.svg" alt="user" />
-        <NavLink activeClassName="active" to="/login">login/registro</NavLink>
+        <NavLink className="myNavLink" activeClassName="myActiveNavLink" to="/login">login/registro</NavLink>
       </section>
+
       <section className="cartFind">
         <img src="images\scartIcon.svg" alt="carrito" />
         <NavLink activeClassName="active" to="/cart"></NavLink>
@@ -29,6 +33,7 @@ function Navbar() {
           onChange={(e) => setSearchText(e.target.value)}
         />
         {!searchText}
+        
       </section>
     </nav>
   );

@@ -15,10 +15,13 @@
     display: flex;
     flex-direction: row;
     line-height: 5px;
-
+    gap: 35px;
+    text-align: center;
 }
 
-
+.titlefooter {
+    text-decoration: underline;
+}
 
 .legal {
     line-height: 5px;

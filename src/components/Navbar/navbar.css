@@ -20,16 +20,18 @@
 .menuNavbar {
     display: flex;
     gap: 20px;
+
 }
 
-.active {
+.myNavLink {
     color: #5C4B51;
     text-decoration: none;
 }
 
-.navlink {
+.myActiveNavLink {
     color: #5C4B51;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: #5C4B51;
 }
 
 .loginOptions {

@@ -1,0 +1,91 @@
+
+.header-catalogue{
+    width: 100vw;
+   }
+
+.catalogue-body button {
+    color: #5C4B51;
+    font-size:  20px;
+}
+
+.catalogue-body{
+    color: #5C4B51;
+    text-align: center;
+    margin-top:50px
+}
+
+#filters-title{
+    font-size:  42px;
+    font-weight:  400;
+    color: #5C4B51;
+    text-align: center;
+}
+
+.filters-lines{
+   width: 1030px;
+   border: none;
+   height:  1px; 
+   background-color:#5C4B51;
+}
+
+.categories-buttons-container{
+    display: flex;  
+    justify-content: center;
+    gap: 40px;
+}
+
+.categories-buttons{
+    background-color: transparent;
+    color: #5C4B51;
+    font-weight:  200;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.categories-buttons:hover{
+    color: #5C7F77;
+
+}
+
+.subcategories-buttons-container{
+    display: flex;  
+    justify-content: center;
+    gap: 40px;
+    margin: 30px 0px 90px 0px;
+}
+
+.subcategories-buttons{
+    background-color: #F2B469;
+    font-weight:  600;
+    color: #5C4B51;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+
+.subcategories-buttons:hover {
+    background-color: #f66e71;
+    color: #FDFCF7;
+  }
+
+
+  .categories-buttons.selected::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #5C4B51; /* Cambia el color según prefieras */
+    margin-top: 5px;
+}
+
+.subcategories-buttons.selected {
+    background-color: #5C7F77; /* Cambia el color según prefieras */
+    color: #FDFCF7; /* Cambia el color del texto según prefieras */
+}

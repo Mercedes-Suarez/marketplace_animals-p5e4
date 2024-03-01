@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.product-detail-container {
+    display: flex;
+    justify-content: center;
+}
+
+.product-detail {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    color: #5C4B51;
+}
+
+.product-detail .breadcrumbs a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.product-detail .breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.product-detail hr {
+    border: 1px solid #5C4B51;
+}
+
+.product-detail h2 {
+    font-size: 2rem;
+}
+
+.product-detail-image img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.product-detail-info p:first-of-type {
+    font-size: 1.5rem;
+}
+
+.product-detail-info .buttons {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 0.5rem;
+    justify-self: baseline;
+}
+
+.product-detail-info .buttons button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    padding: 0.3rem 2rem;
+    border-radius: 25px;
+}
+
+.product-detail-info .buttons .add-to-cart-btn {
+    background-color: #5C7F77;
+    color: #FDFCF7;
+    border: none;
+}
+
+.product-detail-info .buttons .stock-btn {
+    background-color: #8EBEB2;
+    color: #FDFCF7;
+    border: none;
+}

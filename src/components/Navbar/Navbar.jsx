@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <nav className="navbar">
 
-      <img src="images\logooscuro.svg" alt="logo" />
+      <img src="\public\images\logooscuro.svg" alt="logo" />
 
       <section className="menuNavbar">
         <NavLink className="myNavLink" activeClassName="myActiveNavLink" to="/">home</NavLink>
@@ -18,12 +18,12 @@ function Navbar() {
       </section>
 
       <section className="loginOptions">
-        <img src="images\userIcon.svg" alt="user" />
+        <img src="\public\images\userIcon.svg" alt="user" />
         <NavLink className="myNavLink" activeClassName="myActiveNavLink" to="/login">login/registro</NavLink>
       </section>
 
       <section className="cartFind">
-        <img src="images\scartIcon.svg" alt="carrito" />
+        <img src="\public\images\scartIcon.svg" alt="carrito" />
         <NavLink activeClassName="active" to="/cart"></NavLink>
         <input 
           type="text" 

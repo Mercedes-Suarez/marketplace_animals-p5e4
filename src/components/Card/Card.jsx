@@ -24,6 +24,11 @@ function Card({ selectedCategory, selectedSubcategory }) {
                 src={product.productImage}
                 alt={product.productName}
               />
+              <div className='overlay'>
+                Ver más
+              </div>
+            </div>
+          </Link>
               <div className="product-details">
                 <h3 className="product-title">{product.productName}</h3>
                 <p className="product-description">{product.productDescription}</p>
@@ -39,8 +44,7 @@ function Card({ selectedCategory, selectedSubcategory }) {
                  añadir al carrito
                 </button>
               </div>
-            </div>
-          </Link>
+            
         </div>
       ))}
     </div>

@@ -18,13 +18,15 @@ function Breadcrumbs() {
       .filter(crumb => crumb !== '')
       // recorre cada segmento del array (crumb) y lo concatena al valor de currentPath con un / al principio. Esto construye progresivamente la ruta completa a partir de los segmentos individuales
       .map(crumb => {
-        currentPath = `/${crumb}`;
+        currentPath += `/${crumb}`;
+          console.log(currentPath);
+          // NOTA: Esto, tras todo este rollo, NO SE ESTÁ USANDO, pues nuestra ruta no es lineal. Al final en el return hemos hecho una ruta "a mano" más propia para lo que queríamos.
       })
 
  return (
-   <div className="breadcrumbs">
-            <Link to="/">home</Link> / <Link to="/catalogueView">catálogo</Link> / {productNameForCrumb}-{location.state.product.id}
-         </div>
+        <div className="breadcrumbs">
+          <Link to="/">home</Link> / <Link to="/catalogueView">catálogo</Link> / {productNameForCrumb}-{location.state.product.id}
+        </div>
  );
 }
 

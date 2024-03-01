@@ -9,8 +9,8 @@ function Footer() {
           <div className="pagesfooter">
             <p className="titlefooter">páginas</p>
             <br />
-            <p><NavLink className="myNavLink" activeClassName="myActiveNavLink" to="/">home</NavLink></p>
-            <NavLink className="myNavLink" activeClassName="myActiveNavLink" to="/catalogueView">catálogo</NavLink>
+            <p><NavLink className="myNavLinkFooter" to="/">home</NavLink></p>
+            <NavLink className="myNavLinkFooter" to="/catalogueView">catálogo</NavLink>
           </div>
           <div className="accessfooter">
             <p className="titlefooter">accesos</p>

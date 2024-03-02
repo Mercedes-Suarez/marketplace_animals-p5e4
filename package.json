@@ -11,6 +11,9 @@
     "api": "json-server --watch db.json",
     "test": "jest"
   },
+  "jest": {
+    "testEnvironment": "jsdom"
+  },  
   "dependencies": {
     "@cloudinary/react": "^1.13.0",
     "@cloudinary/url-gen": "^1.18.0",

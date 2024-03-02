@@ -1,6 +1,6 @@
 import { useForm, Controller } from "react-hook-form";
 import ProductHandler from "../../handler/ProductHandler";
-import "./form.css";
+// import "./form.css";
 // import { Cloudinary } from "@cloudinary/url-gen";
 
 function Form() {

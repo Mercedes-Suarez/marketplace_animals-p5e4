@@ -9,7 +9,7 @@ describe("<Form/>", () => {
     test("renderizar el componente", () => {
         render(<Form/>)
 
-    //    const labelProductName= screen.getByLabelText();(/productName/i);
+    //   const labelProductName= screen.getByLabelText();(/productName/i);
         const inputProductName= screen.getByRole('textbox',{name:/productName/i});
         // const labelProductDescription= screen.getByLabelText(/productDescription/i);
         const inputProductDescription= screen.getByRole('textbox',{name:/productDescription/i});

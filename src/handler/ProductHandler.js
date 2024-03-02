@@ -1,8 +1,8 @@
 import ProductService from "../service/ProductService";
 
 export const ProductHandler = {
-  async getProducts() {
-    let allProducts = await ProductService.getProducts();
+  async getAllProducts() {
+    let allProducts = await ProductService.getAllProducts();
     return allProducts;
   },
 

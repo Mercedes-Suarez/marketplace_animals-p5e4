@@ -1,14 +1,13 @@
 import { NavLink } from "react-router-dom";
-import { useContext } from "react";
-import { SearchContext } from "../../context/SearchContext.jsx";
+import { useState } from "react";
 import "./navbar.css";
 
 const Navbar = () => {
 
-  const { searchTerm, setSearchTerm } = useContext(SearchContext);
- 
-  const handleSearch = (e) => {
-     setSearchTerm(e.target.value);
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleSearch = (event) => {
+    setSearchTerm(event.target.value);
   };
 
   return (

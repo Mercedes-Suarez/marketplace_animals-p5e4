@@ -24,6 +24,16 @@ export const ProductHandler = {
     });
   },
 
+  async searchProducts(searchTerm) {
+    let allProducts = await ProductService.getAllProducts();
+
+    let filteredProducts = allProducts.filter(product => 
+      product.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    return filteredProducts;
+ },
+
  // Funcion de filtrado
  async getProducts(productCategory, productSubcategory) {
   let allProducts = await ProductService.getProducts();

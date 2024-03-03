@@ -4,6 +4,7 @@ import Home from "./views/Home/Home";
 import Management from "./views/Management/Management";
 import CatalogueView from "./views/CatalogueView/CatalogueView";
 import Product from "./views/Product/Product";
+import SearchView from "./views/SearchView/SearchView";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             element={<Product />}
             handle={{ crumb: () => <span>detalle de producto</span> }}
           />
+          <Route path="/searchview" element={<SearchView />} />
         </Routes>
       </Router>
 

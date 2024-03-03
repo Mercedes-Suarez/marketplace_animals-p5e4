@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { SearchProvider } from "./context/SearchContext.jsx";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./views/Home/Home";
 import Management from "./views/Management/Management";
@@ -8,7 +7,7 @@ import Product from "./views/Product/Product";
 
 function App() {
   return (
-    <SearchProvider>
+
       <Router>
         <Navbar />
         <Routes>
@@ -26,7 +25,7 @@ function App() {
           />
         </Routes>
       </Router>
-    </SearchProvider>
+
   );
 }
 

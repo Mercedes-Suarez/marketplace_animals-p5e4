@@ -4,6 +4,7 @@ import Home from "./views/Home/Home";
 import Management from "./views/Management/Management";
 import CatalogueView from "./views/CatalogueView/CatalogueView";
 import ProductDetail from "./components/ProductDetail/ProductDetail";
+import Prueba from "./components/prueba";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/catalogueView" element={<CatalogueView />} />
         <Route path="/myProducts" element={<Management />} />
         <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="/prueba" element={<Prueba />} />
       </Routes>
     
     </Router>

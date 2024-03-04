@@ -10,9 +10,6 @@
     "preview": "vite preview",
     "api": "json-server --watch db.json",
     "test": "jest"
-  },
-  "jest": {
-    "testEnvironment": "jsdom"
   },  
   "dependencies": {
     "@cloudinary/react": "^1.13.0",

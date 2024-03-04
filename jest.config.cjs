@@ -15,14 +15,26 @@
 //     },
 //     testEnviroment :'jsdom',
 // }
+// module.exports = {
+//     transform: {
+//         '^.+\\.jsx?$': 'babel-jest',
+//         // "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js"
+//     },
+//     moduleNameMapper: {
+//         '\\.(jpg|jpeg|png|gif|webp|svg)$': 'jest-transform-stub',
+//         "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+//     },
+//     testEnviroment: 'jsdom',
+// }
+
 module.exports = {
     transform: {
-        '^.+\\.jsx?$': 'babel-jest',
-        // "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js"
+      '^.+\\.jsx?$': 'babel-jest',
     },
     moduleNameMapper: {
-        '\\.(jpg|jpeg|png|gif|webp|svg)$': 'jest-transform-stub',
-        "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+      // ... otras mapeaciones de nombres de módulos
+      '\\.(jpg|jpeg|png|gif|webp|svg)$': 'jest-transform-stub',
+      '\\.css$': 'identity-obj-proxy',
     },
-    testEnviroment: 'jsdom',
-}
+    testEnvironment: 'jsdom',
+  };

@@ -1,7 +1,8 @@
+import React from "react";
 import { useForm, Controller } from "react-hook-form";
 import ProductHandler from "../../handler/ProductHandler";
-// import "./form.css";
-// import { Cloudinary } from "@cloudinary/url-gen";
+import "./form.css";
+import { Cloudinary } from "@cloudinary/url-gen";
 
 function Form() {
   const { register, handleSubmit: pHandleSubmit, formState: { errors }, watch, control, reset } = useForm();

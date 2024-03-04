@@ -1,16 +1,35 @@
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; // Importa useNavigate
 import "./navbar.css";
 import Search from "../Search/Search";
-import { useAuth } from '../context/AuthContext.js';
+import { useContext, useEffect, useState } from 'react'; // Importa useEffect y useState
+import { UserContext } from '../../context/UserContext.jsx'; 
 
 const Navbar = () => {
-  
-  const { isLoggedIn, user } = useAuth();
+ const { email, isAuthenticated, logout } = useContext(UserContext);
+ const [userName, setUserName] = useState(''); 
+ const navigate = useNavigate(); 
 
+ 
+ const handleLogout = () => {
+    logout(); 
+    navigate('/'); 
+ };
 
-  return (
+ 
+ useEffect(() => {
+    if (email) {
+      setUserName(email.split('@')[0]); // Actualiza el nombre de usuario basado en el email
+    } else {
+      setUserName(''); // Limpia el nombre de usuario si no hay email
+    }
+ }, [email]); // Dependencia: email
+
+ console.log("Email:", email); // Verifica el valor de email
+ console.log("User Name:", userName); // Verifica el valor de userName
+
+ return (
     <nav className="navbar">
-
       <img src="\public\images\logooscuro.svg" alt="logo" />
 
       <section className="menuNavbar">
@@ -20,10 +39,10 @@ const Navbar = () => {
 
       <section className="loginOptions">
         <img src="\public\images\userIcon.svg" alt="user" />
-        {isLoggedIn ? (
+        {isAuthenticated ? (
           <>
-            <span>{user.name}</span>
-            <img src={user.photo} alt="Foto de usuario" style={{ height: '40px', width: '40px' }} />
+            <p>{userName}</p>
+            <button onClick={handleLogout}>logout</button>
           </>
         ) : (
           <NavLink className="myNavLink" activeClassName="myActiveNavLink" to="/login">login/registro</NavLink>
@@ -34,10 +53,9 @@ const Navbar = () => {
         <img src="\public\images\scartIcon.svg" alt="carrito" />
         <NavLink activeClassName="active" to="/cart"></NavLink>
         <Search/>
-        
       </section>
     </nav>
-  );
+ );
 };
 
 export default Navbar;

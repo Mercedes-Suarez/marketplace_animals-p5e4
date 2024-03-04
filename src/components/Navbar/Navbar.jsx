@@ -1,8 +1,12 @@
 import { NavLink } from "react-router-dom";
 import "./navbar.css";
 import Search from "../Search/Search";
+import { useAuth } from '../context/AuthContext.js';
 
 const Navbar = () => {
+  
+  const { isLoggedIn, user } = useAuth();
+
 
   return (
     <nav className="navbar">
@@ -16,7 +20,14 @@ const Navbar = () => {
 
       <section className="loginOptions">
         <img src="\public\images\userIcon.svg" alt="user" />
-        <NavLink className="myNavLink" activeClassName="myActiveNavLink" to="/login">login/registro</NavLink>
+        {isLoggedIn ? (
+          <>
+            <span>{user.name}</span>
+            <img src={user.photo} alt="Foto de usuario" style={{ height: '40px', width: '40px' }} />
+          </>
+        ) : (
+          <NavLink className="myNavLink" activeClassName="myActiveNavLink" to="/login">login/registro</NavLink>
+        )}
       </section>
 
       <section className="cartFind">

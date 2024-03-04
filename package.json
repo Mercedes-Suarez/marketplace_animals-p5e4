@@ -4,22 +4,42 @@
   "description": "",
   "main": "vite.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "dev": "vite",
-    "start": "npm run dev",
-    "type": "module"
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "api": "json-server --watch db.json"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@vitejs/plugin-react": "^4.2.1",
+    "@cloudinary/react": "^1.13.0",
+    "@cloudinary/url-gen": "^1.18.0",
     "axios": "^1.6.7",
+    "cloudinary": "^2.0.1",
+    "json-server": "^1.0.0-alpha.23",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.50.1",
-    "react-router-dom": "^6.22.1",
-    "sweetalert2": "^11.10.5",
-    "vite": "^5.1.4"
+    "react-router-dom": "^6.22.2",
+    "sweetalert2": "^11.10.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@babel/preset-react": "^7.23.3",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-transform-stub": "^2.0.0",
+    "vite": "^5.1.3"
   }
 }

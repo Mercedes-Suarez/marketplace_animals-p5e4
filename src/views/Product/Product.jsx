@@ -6,7 +6,7 @@
 // Componente Footer
 
 import Navbar from "../../components/Navbar/Navbar";
-import ProductDetail from "../components/ProductDetail/ProductDetail";
+import ProductDetail from "../../components/ProductDetail/ProductDetail";
 import Suggestions from "../../components/Suggestions/Suggestions";
 import Footer from "../../components/Footer/Footer";
 

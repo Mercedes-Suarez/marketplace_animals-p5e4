@@ -16,7 +16,35 @@
     width: 100%;
     height: auto;
     border-radius: 15px;
-    margin-bottom: 10px; 
+  }
+
+  .image-container {
+    position: relative;
+    width:  auto; /* Ajusta el tamaño según sea necesario */
+    height:  auto; /* Ajusta el tamaño según sea necesario */
+  }
+
+  .image-container .overlay {
+    position: absolute;
+    top:  0;
+    left:  0;
+    width:  100%;
+    height:  96%;
+    background: rgba(0,  0,  0,  0.5); /* Esto oscurece la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity .8s ease;
+    color: white; /* Color del texto */
+    text-decoration: none;
+    font-size:  20px;
+  }
+
+  .image-container:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
   }
   
   .product-details {
@@ -95,3 +123,89 @@
     height: 40px;
     fill: #5C4B51;
   }
+
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.product-details {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.product-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #5C4B51;
+  margin-bottom: 5px;
+}
+
+.product-description {
+  font-size: 18px;
+  font-weight:200;
+  color: #5C4B51;
+  margin-bottom: 10px;
+}
+
+.price-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  color: #5C4B51;
+  margin-right: 10px;
+}
+
+.add-to-cart {
+  display: flex;
+  justify-content: center;
+}
+
+.add-to-cart-button {
+  background-color: #F2B469;
+  color: #5C4B51;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.add-to-cart-button:hover {
+  background-color: #EE6163;
+  color: #FDFCF7;
+}
+
+.like-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 30px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+}
+
+#heart-icon {
+  width: 30px;
+  height: 40px;
+}

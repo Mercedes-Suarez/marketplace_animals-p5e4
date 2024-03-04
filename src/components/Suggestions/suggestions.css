@@ -1,0 +1,121 @@
+.suggestions-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+   }
+   
+   .suggestions-card {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+   }
+   
+   .suggestions-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 10px;
+   }
+   
+   .suggestions-image-container {
+    position: relative;
+    width: auto; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Ajusta el tamaño según sea necesario */
+   }
+   
+   .suggestions-image-container .suggestions-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 96%;
+    background: rgba(0, 0, 0, 0.5); /* Esto oscurece la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity .8s ease;
+    color: white; /* Color del texto */
+    text-decoration: none;
+    font-size: 20px;
+   }
+   
+   .suggestions-image-container:hover .suggestions-overlay {
+    opacity: 1;
+    cursor: pointer;
+   }
+   
+   .suggestions-details {
+    margin-bottom: 10px;
+    text-align: center;
+   }
+   
+   .suggestions-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #5C4B51;
+    margin-bottom: 5px;
+   }
+   
+   .suggestions-description {
+    font-size: 18px;
+    font-weight: 200;
+    color: #5C4B51;
+    margin-bottom: 10px;
+   }
+   
+   .suggestions-price-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+   }
+   
+   .suggestions-price {
+    font-size: 1.25em;
+    color: #5C4B51;
+    margin-right: 10px;
+   }
+   
+   .suggestions-add-to-cart {
+    display: flex;
+    justify-content: center;
+   }
+   
+   .suggestions-add-to-cart-button {
+    font-size: 20px;
+    font-family: 'Inria Sans', sans-serif;
+    background-color: #F2B469;
+    color: #5C4B51;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+   }
+   
+   .suggestions-add-to-cart-button:hover {
+    background-color: #EE6163;
+    color: #FDFCF7;
+   }
+   
+   .suggestions-like-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 30px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+   }
+   
+   #heart-icon {
+    width: 30px;
+    height: 40px;
+   }

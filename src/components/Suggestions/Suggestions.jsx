@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ProductHandler from "../../handler/ProductHandler"
+import { Link } from 'react-router-dom';
+import './suggestions.css'
 
 
 function Suggestions({ selectedProduct }) {
@@ -17,19 +19,41 @@ function Suggestions({ selectedProduct }) {
  }, [selectedProduct]);
 
  return (
-    <div>
-      <h1>También te puede interesar...</h1>
-      <div className="suggestions-container">
-        {relatedProducts.map((product, index) => (
-          <div key={index} className="suggestion-card">
-            {/* Aquí puedes usar el componente Card o una estructura similar para mostrar cada producto */}
-            <h3>{product.productName}</h3>
-            <img src={product.productImage} alt={product.productName} />
-            <p>{product.productDescription}</p>
-          </div>
-        ))}
-      </div>
-    </div>
+
+    <div className="carousel">
+    <div className="suggestions-container">
+    {relatedProducts.map((product, index) => (
+       <div key={index} className="suggestions-card">
+         <Link to={`/products/${product.id}`} state={{ product }}>            
+           <div className='suggestions-image-container'>
+             <img
+               src={product.productImage}
+               alt={product.productName}
+             />
+             <div className='suggestions-overlay'>
+               Ver más
+             </div>
+           </div>
+         </Link>
+         <div className="suggestions-details">
+           <h3 className="suggestions-title">{product.productName}</h3>
+           <p className="suggestions-description">{product.productDescription}</p>
+           <div className="suggestions-price-details">
+             <span className="suggestions-price">{product.productPrice.monto} {product.productPrice.moneda}</span>
+             <button className="suggestions-like-button">
+               <img src="/images/heart-icon.svg" alt="Me gusta" id="heart-icon" />
+             </button>
+           </div>
+         </div>
+         <div className="suggestions-add-to-cart">
+           <button className="suggestions-add-to-cart-button">
+             añadir al carrito
+           </button>
+         </div>
+       </div>
+     ))}
+   </div>
+   </div>
  );
 }
 

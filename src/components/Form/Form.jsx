@@ -36,14 +36,15 @@ function Form() {
   const handleUploadClick = () => {
     const widget = window.cloudinary.createUploadWidget({
       cloudName: 'dchd7k6oh',
-      uploadPreset: 'ntwyogl8',
+      uploadPreset: 'bzwsb3w3',
     },
       (error, result) => {
         if (result.event === 'success') {
           const url = result.info.secure_url;
           console.log(url);
           setImageUrl(url);
-          setValue("imageSource", url);
+          setValue("productImage", url);
+          setImageUrl("");
         }
       });
     widget.open();
@@ -225,7 +226,12 @@ function Form() {
         readOnly
         name="productImage"
         value={imageUrl}
-        {...register("imageSource")}
+        {...register("productImage", {
+          required: {
+            value: true,
+            message: "Image is required, please.",
+          },
+        })}
         />
           {errors.productImage && <span>{errors.productImage.message}</span>}
         </div>

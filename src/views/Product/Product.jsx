@@ -5,21 +5,26 @@
 // Componente Recomendaciones
 // Componente Footer
 
+import React from 'react';
+import { useLocation } from 'react-router-dom';
+import Suggestions from "../../components/Suggestions/Suggestions";
 import Navbar from "../../components/Navbar/Navbar";
 import ProductDetail from "../../components/ProductDetail/ProductDetail";
-import Suggestions from "../../components/Suggestions/Suggestions";
 import Footer from "../../components/Footer/Footer";
 
 
 function Product() {
-    return (
-        <>
-            <Navbar />
-            <ProductDetail />
-            <Suggestions />
-            <Footer />
-        </>
-    )
+ const location = useLocation();
+ const selectedProduct = location.state?.product;
+
+ return (
+    <>
+      <Navbar />
+      <ProductDetail />
+      <Suggestions selectedProduct={selectedProduct} />
+      <Footer />
+    </>
+ );
 }
 
 export default Product;

@@ -3,16 +3,18 @@ import { Link } from 'react-router-dom'; // Asegúrate de importar Link de 'reac
 import ProductHandler from "../../handler/ProductHandler";
 import './card.css'
 
-function Card({ selectedCategory, selectedSubcategory }) {
+function Card({ selectedCategory, selectedSubcategory, product }) {
  const [products, setProducts] = useState([]);
- const [liked, setLiked] = useState(false);
+
   
  useEffect(() => {
     // Solo necesitas este useEffect para obtener y filtrar los productos
-    ProductHandler.getProducts(selectedCategory, selectedSubcategory).then(filteredProducts => {
+    ProductHandler.getFilteredProducts(selectedCategory, selectedSubcategory).then(filteredProducts => {
       setProducts(filteredProducts);
     });
  }, [selectedCategory, selectedSubcategory]); // Dependencias del efecto
+
+
 
  return (
     <div className="product-container">

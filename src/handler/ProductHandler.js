@@ -25,7 +25,7 @@ export const ProductHandler = {
   },
 
  // Funcion de filtrado
- async getProducts(productCategory, productSubcategory) {
+ async getFilteredProducts(productCategory, productSubcategory) {
   let allProducts = await ProductService.getProducts();
 
   // Aplicar filtros si se proporcionan

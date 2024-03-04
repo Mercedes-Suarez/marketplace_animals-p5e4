@@ -1,5 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./views/Home/Home";
@@ -11,28 +9,25 @@ import SearchView from "./views/SearchView/SearchView";
 
 function App() {
   return (
-
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login /> } />
-          <Route
-            path="/catalogueView"
-            element={<CatalogueView />}
-            handle={{ crumb: () => <span>catálogo</span> }}
-          />
-          <Route path="/myProducts" element={<Management />} />
-          <Route
-            path="/products/:id"
-            element={<Product />}
-            handle={{ crumb: () => <span>detalle de producto</span> }}
-          />
-          <Route path="/searchview" element={<SearchView />} />
-        </Routes>
-      </Router>
-
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route
+          path="/catalogueView"
+          element={<CatalogueView />}
+          handle={{ crumb: () => <span>catálogo</span> }}
+        />
+        <Route path="/myProducts" element={<Management />} />
+        <Route
+          path="/products/:id"
+          element={<Product />}
+          handle={{ crumb: () => <span>detalle de producto</span> }}
+        />
+        <Route path="/searchview" element={<SearchView />} />
+      </Routes>
+    </Router>
   );
 }
-//ReactDOM.render(<App />, document.getElementById('root'));
 export default App;

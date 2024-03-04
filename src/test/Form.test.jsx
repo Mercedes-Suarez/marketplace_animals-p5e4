@@ -15,6 +15,12 @@ describe("<Form/>",()=>{
         const inputStock = screen.getByPlaceholderText(/Stock/i);
         const radioInput = screen.getByRole('radio', { name: /gato/i });
         const radioInput2 = screen.getByRole('radio', { name: /perro/i });
+        const radioInput3 = screen.getByRole('radio', { name: /juguetes/i });
+        const radioInput4 = screen.getByRole('radio', { name: /chuches/i });
+        const radioInput5 = screen.getByRole('radio', { name: /camas/i });
+        const radioInput6 = screen.getByRole('radio', { name: /correas/i });
+        const button = screen.getByText(/añadir producto/i);
+
 
   
         expect(h1).toBeInTheDocument();
@@ -24,9 +30,11 @@ describe("<Form/>",()=>{
         expect(inputStock).toBeInTheDocument();
         expect(radioInput).toBeInTheDocument();
         expect(radioInput2).toBeInTheDocument();
-        
-
-
+        expect(radioInput3).toBeInTheDocument();
+        expect(radioInput4).toBeInTheDocument();
+        expect(radioInput5).toBeInTheDocument();
+        expect(button).toBeInTheDocument();
+      
 
 
     });

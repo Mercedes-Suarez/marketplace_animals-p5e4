@@ -21,7 +21,7 @@ function Card() {
                 <h3 className="product-title">{product.productName}</h3>
             <p className="product-description">{product.productDescription}</p>
                 <div className="price-details">
-                  <span className="price">{product.productPrice.monto} {product.productPrice.moneda}</span>
+                  <span className="price">{product.productPrice?.monto} {product.productPrice?.moneda}</span>
                   <button className="like-button">
                     <img src="/images/heart-icon.svg" alt="Me gusta" id="heart-icon" />
                   </button>

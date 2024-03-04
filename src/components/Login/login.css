@@ -104,6 +104,14 @@
     /* Cambia el color de fondo al pasar el ratón */
 }
 
+.form-group,
+.input-email,
+.input-password,
+.button-login,
+.button-register,
+.button-back {
+ width: 100%;
+}
 /* Estilos para el contenedor de las imágenes y el botón de volver */
 .image-container {
     display: flex;
@@ -203,3 +211,55 @@
     margin: 4px 2px;
     cursor: pointer;
 }
+/* Estilos para desktops */
+@media (min-width: 1025px) {
+    .modal-content {
+       width: 50%; /* Ajusta el ancho del modal para desktops */
+       margin: 20% auto; /* Ajusta el margen para desktops */
+    }
+   
+    .image-container-baby {
+       width: 45%; /* Asegura que las imágenes ocupen una parte del ancho en desktops */
+    }
+   
+    .button-back {
+       width: auto; /* Ajusta el ancho del botón para desktops */
+       padding: 5px 10px;
+       font-size: 14px;
+    }
+   }
+
+/* Estilos para tablets */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .modal-content {
+       width: 70%; /* Ajusta el ancho del modal para tablets */
+       margin: 20% auto; /* Ajusta el margen para tablets */
+    }
+   
+    .image-container-baby {
+       width: 45%; /* Asegura que las imágenes ocupen una parte del ancho en tablets */
+    }
+   
+    .button-back {
+       width: auto; /* Ajusta el ancho del botón para tablets */
+       padding: 5px 10px;
+       font-size: 14px;
+    }
+   }
+   /* Estilos para dispositivos móviles */
+@media (max-width: 480px) {
+    .modal-content {
+       width: 90%; /* Ajusta el ancho del modal para dispositivos móviles */
+       margin: 20% auto; /* Ajusta el margen para dispositivos móviles */
+    }
+   
+    .image-container-baby {
+       width: 100%; /* Asegura que las imágenes ocupen todo el ancho en dispositivos móviles */
+    }
+   
+    .button-back {
+       width: auto; /* Ajusta el ancho del botón para dispositivos móviles */
+       padding: 5px 10px;
+       font-size: 14px;
+    }
+   }

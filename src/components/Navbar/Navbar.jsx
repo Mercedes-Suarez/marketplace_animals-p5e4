@@ -1,11 +1,8 @@
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
 import "./navbar.css";
+import Search from "../Search/Search";
 
-function Navbar() {
-
-  const [searchText, setSearchText] = useState('');
-
+const Navbar = () => {
 
   return (
     <nav className="navbar">
@@ -25,18 +22,11 @@ function Navbar() {
       <section className="cartFind">
         <img src="\public\images\scartIcon.svg" alt="carrito" />
         <NavLink activeClassName="active" to="/cart"></NavLink>
-        <input 
-          type="text" 
-          className="search-input" 
-          placeholder="Buscar..."
-          value={searchText}
-          onChange={(e) => setSearchText(e.target.value)}
-        />
-        {!searchText}
+        <Search/>
         
       </section>
     </nav>
   );
-}
+};
 
 export default Navbar;

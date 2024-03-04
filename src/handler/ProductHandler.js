@@ -1,8 +1,8 @@
 import ProductService from "../service/ProductService";
 
 export const ProductHandler = {
-  async getProducts() {
-    let allProducts = await ProductService.getProducts();
+  async getAllProducts() {
+    let allProducts = await ProductService.getAllProducts();
     return allProducts;
   },
 
@@ -23,6 +23,16 @@ export const ProductHandler = {
       }
     });
   },
+
+  async searchProducts(searchTerm) {
+    let allProducts = await ProductService.getAllProducts();
+
+    let filteredProducts = allProducts.filter(product => 
+      product.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    return filteredProducts;
+ },
 
  // Funcion de filtrado
  async getProducts(productCategory, productSubcategory) {

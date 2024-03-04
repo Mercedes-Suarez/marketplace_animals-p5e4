@@ -79,9 +79,13 @@ footer {
     background-color: #EE6163;
     width: 150px;
     border-radius: 25px; 
-    height: 39px;
+    height: 30px;
     text-align: center;
     align-content: center;
-    padding-top: 14px;
+    padding-top: 10px;
     color: white;
+}
+
+.buttonbox :hover {
+    cursor: pointer;
 }

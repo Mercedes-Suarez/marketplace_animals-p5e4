@@ -7,13 +7,14 @@ import { UserContext } from '../../context/UserContext.jsx';
 import UserHandler from '../../handler/UserHandler';
 
 function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
+ const [email, setEmail] = useState('');
+ const [password, setPassword] = useState('');
+ const [error, setError] = useState('');
   
-  const navigate = useNavigate();
-  const { setIsAuthenticated } = useContext(UserContext);
-  const handleSubmit = async (event) => {
+ const navigate = useNavigate();
+ const { setIsAuthenticated, setEmail: setUserEmail } = useContext(UserContext);
+
+ const handleSubmit = async (event) => {
     event.preventDefault();
 
     if (!email || !password) {
@@ -22,7 +23,6 @@ function Login() {
     }
 
     try {
-
       let allUsers = await UserHandler.getUsers();
       const user = allUsers.find(user => user.email === email && user.userPassword === password);
       if (!user) {
@@ -31,6 +31,7 @@ function Login() {
 
       navigate('/MyProducts');
       setIsAuthenticated(true);
+      setUserEmail(email); // Actualiza el email del usuario en el contexto
 
     } catch (error) {
       setError(error.message);

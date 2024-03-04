@@ -1,15 +1,35 @@
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; // Importa useNavigate
 import "./navbar.css";
 import Search from "../Search/Search";
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react'; // Importa useEffect y useState
 import { UserContext } from '../../context/UserContext.jsx'; 
-const Navbar = () => {
-  const { email, isAuthenticated } = useContext(UserContext);
-  const userName = email ? email.split('@')[0] : '';
-  
-  return (
-    <nav className="navbar">
 
+const Navbar = () => {
+ const { email, isAuthenticated, logout } = useContext(UserContext);
+ const [userName, setUserName] = useState(''); 
+ const navigate = useNavigate(); 
+
+ 
+ const handleLogout = () => {
+    logout(); 
+    navigate('/'); 
+ };
+
+ 
+ useEffect(() => {
+    if (email) {
+      setUserName(email.split('@')[0]); // Actualiza el nombre de usuario basado en el email
+    } else {
+      setUserName(''); // Limpia el nombre de usuario si no hay email
+    }
+ }, [email]); // Dependencia: email
+
+ console.log("Email:", email); // Verifica el valor de email
+ console.log("User Name:", userName); // Verifica el valor de userName
+
+ return (
+    <nav className="navbar">
       <img src="\public\images\logooscuro.svg" alt="logo" />
 
       <section className="menuNavbar">
@@ -20,7 +40,10 @@ const Navbar = () => {
       <section className="loginOptions">
         <img src="\public\images\userIcon.svg" alt="user" />
         {isAuthenticated ? (
-          <span>{userName}</span>
+          <>
+            <h1>{userName}</h1>
+            <button onClick={handleLogout}>Cerrar sesión</button>
+          </>
         ) : (
           <NavLink className="myNavLink" activeClassName="myActiveNavLink" to="/login">login/registro</NavLink>
         )}
@@ -30,10 +53,9 @@ const Navbar = () => {
         <img src="\public\images\scartIcon.svg" alt="carrito" />
         <NavLink activeClassName="active" to="/cart"></NavLink>
         <Search/>
-        
       </section>
     </nav>
-  );
+ );
 };
 
 export default Navbar;

@@ -1,9 +1,12 @@
 import { NavLink } from "react-router-dom";
 import "./navbar.css";
 import Search from "../Search/Search";
-
+import { useContext } from 'react';
+import { UserContext } from '../../context/UserContext.jsx'; 
 const Navbar = () => {
-
+  const { email, isAuthenticated } = useContext(UserContext);
+  const userName = email ? email.split('@')[0] : '';
+  
   return (
     <nav className="navbar">
 
@@ -16,7 +19,11 @@ const Navbar = () => {
 
       <section className="loginOptions">
         <img src="\public\images\userIcon.svg" alt="user" />
-        <NavLink className="myNavLink" activeClassName="myActiveNavLink" to="/login">login/registro</NavLink>
+        {isAuthenticated ? (
+          <span>{userName}</span>
+        ) : (
+          <NavLink className="myNavLink" activeClassName="myActiveNavLink" to="/login">login/registro</NavLink>
+        )}
       </section>
 
       <section className="cartFind">

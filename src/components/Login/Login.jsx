@@ -1,16 +1,18 @@
-import React, { useState } from 'react';
-import Swal from 'sweetalert2';
-import { useNavigate } from 'react-router-dom';
-import UserHandler from '../../handler/UserHandler';
 import './login.css';
+import Swal from 'sweetalert2';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useContext } from 'react';
+import { UserContext } from '../../context/UserContext.jsx'; 
+import UserHandler from '../../handler/UserHandler';
 
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const [isModalOpen, setIsModalOpen] = useState(false); // Estado para controlar la visibilidad del modal
+  
   const navigate = useNavigate();
-
+  const { setIsAuthenticated } = useContext(UserContext);
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -28,6 +30,7 @@ function Login() {
       }
 
       navigate('/MyProducts');
+      setIsAuthenticated(true);
 
     } catch (error) {
       setError(error.message);
@@ -39,20 +42,11 @@ function Login() {
     }
   };
 
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
 
   return (
     <div>
-      <button onClick={openModal}>Comienza tu sesión</button> {/* Botón para abrir el modal */}
-
-      {isModalOpen && (
-
+   
         <div className="modal">
           <div className="modal-content">
             <img src="/images/logoHuella.png" alt="Logo" className="logo" />
@@ -101,7 +95,7 @@ function Login() {
             </div>
           </div>
         </div>
-      )}
+      )
     </div>
   );
 }

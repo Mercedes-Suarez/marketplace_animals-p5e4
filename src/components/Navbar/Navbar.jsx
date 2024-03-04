@@ -41,8 +41,8 @@ const Navbar = () => {
         <img src="\public\images\userIcon.svg" alt="user" />
         {isAuthenticated ? (
           <>
-            <h1>{userName}</h1>
-            <button onClick={handleLogout}>Cerrar sesión</button>
+            <p>{userName}</p>
+            <button onClick={handleLogout}>logout</button>
           </>
         ) : (
           <NavLink className="myNavLink" activeClassName="myActiveNavLink" to="/login">login/registro</NavLink>

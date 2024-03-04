@@ -40,6 +40,20 @@
     gap: 20px;
 }
 
+.loginOptions p {
+    color: #5C4B51;
+}
+
+.loginOptions button {
+    background-color: #5C4B51;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
 .cartFind {
     display: flex;
     align-items: center;

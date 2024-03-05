@@ -31,7 +31,7 @@ function Card({ selectedCategory, selectedSubcategory }) {
           </Link>
               <div className="product-details">
                 <h3 className="product-title">{product.productName}</h3>
-                <p className="product-description">{product.productDescription}</p>
+                {/* <p className="product-description">{product.productDescription}</p> */}
                 <div className="price-details">
                   <span className="price">{product.productPrice?.monto} {product.productPrice?.moneda}</span>
                   <button className="like-button">

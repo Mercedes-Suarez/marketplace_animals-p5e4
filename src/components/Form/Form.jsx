@@ -4,34 +4,17 @@ import { Cloudinary } from '@cloudinary/url-gen';
 import './form.css';
 
 import ProductHandler from '../../handler/ProductHandler';
-import { AdvancedImage } from '@cloudinary/react'; //Esto quizá no sea necesario
-import { CloudinaryConfig } from '../Config/CloudinaryConfig';
 
 function Form() {
   const { register,
     handleSubmit: pHandleSubmit,
     formState: { errors },
-    watch,
     control,
     reset
   } = useForm();
 
-  /*
-    Some useForm() options:
-    - register('nombreDelInput', {objetoDeOpciones} ): Registra e identifica cada elemento/input del formulario.
-
-    - handleSubmit: Maneja el envío el formulario; por ejemplo, para que no se cargue solo o para que se pueda comprobar antes de enviarlo.
-
-    - formState (es un objeto): El valor actual de cómo está el formulario. Registra todos los valores del formulario y si alguno falla, crea un objeto Error y ese Error identifica qué input es el que ha fallado.
-
-    - watch: Propiedad/función que al ejecutarse trae el estado actual del formulario. Eso nos sirve para validaciones y para condicionalmente mostrar, por ejemplo, otro input.
-
-    - setValue: Propiedad/función que permite establecer el valor de un input.
-    */
-
   const cld = new Cloudinary({ cloudName: 'dchd7k6oh' });
   const [imageUrl, setImageUrl] = useState('');
-  // const [submittedData, setSubmittedData] = useState(null);
 
   const handleUploadClick = () => {
     const widget = window.cloudinary.createUploadWidget({
@@ -53,7 +36,6 @@ function Form() {
   const onSubmit = pHandleSubmit((data) => {
     ProductHandler.submitProduct(data);
     reset();
-    // setSubmittedData(data);
   });
 
   return (

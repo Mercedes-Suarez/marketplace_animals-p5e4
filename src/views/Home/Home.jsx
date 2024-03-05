@@ -5,7 +5,6 @@
 // Componente Footer
 // Component Login (MODAL)
 
-import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import { useNavigate } from "react-router-dom";
 import "./home.css";
@@ -14,12 +13,11 @@ function Home() {
   const navigate = useNavigate();
 
   const goToProducts = () => {
-    navigate("/home/products");
+    navigate("/catalogueView");
   };
 
   return (
     <>
-      <Navbar />
       <div className="bodyhome">
         <section className="homeHeader">
           <img src="images\imageHeader.png" alt="Portada" />

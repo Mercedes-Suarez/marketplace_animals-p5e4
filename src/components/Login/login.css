@@ -1,0 +1,205 @@
+.modal-content {
+    background-color: #fefefe;
+    position: relative;
+    margin: 15% auto;
+    border-radius: 25px;
+       /* Centrado vertical y horizontal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 465px;
+    /* Ancho del modal */
+    height: auto;
+    display: flex;
+    /* Hacemos que el contenedor sea un Flexbox */
+    flex-direction: column;
+    /* Alineación vertical de los elementos hijos */
+    align-items: center;
+    /* Centramos los elementos hijos horizontalmente */
+    justify-content: space-around;
+    /* Distribuimos el espacio entre los elementos hijos */
+
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    /* Centra la imagen horizontalmente */
+    width: 42px;
+    /* Ajusta el tamaño según necesites */
+    height: 40px;
+    /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos para los elementos del formulario */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+    /* Asegura que los elementos del formulario ocupen todo el ancho disponible */
+
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    width: 100%;
+    /* Asegura que las etiquetas ocupen todo el ancho disponible */
+
+}
+
+/* Estilos para el input de email y password */
+.input-email,
+.input-password {
+    width: 100%;
+    /* Ancho relativo para adaptabilidad */
+    height: 39px;
+    border-radius: 25px;
+    padding: 5px;
+    box-sizing: border-box;
+    /* Asegura que el padding no afecte el tamaño total del input */
+
+}
+
+/* Estilos para el botón de iniciar sesión , registrarse y volver y*/
+.button-login,
+.button-register {
+    width: auto;
+    /* Ancho relativo para adaptabilidad */
+    height: 39px;
+    border-radius: 25px;
+    background-color: #4CAF50;
+    /* Color de fondo para iniciar sesión */
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 10px;
+    /* Espacio entre los botones y el formulario */
+    box-sizing: border-box;
+    /* Asegura que el padding no afecte el tamaño total del botón */
+    margin: 10px auto;
+    /* Aplica margen arriba y abajo, y centra los botones */
+    transition: background-color 0.3s ease;
+    /* Transición suave al cambiar el color de fondo */
+
+}
+
+.button-login:hover,
+.button-register:hover {
+    background-color: #8EBEB2;
+    /* Cambia el color de fondo al pasar el ratón */
+}
+
+/* Estilos para el contenedor de las imágenes y el botón de volver */
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px 0;
+}
+
+.image-container-baby {
+    width: 45%; /* Asegura que cada imagen ocupe no más del 45% del ancho del contenedor */
+ max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+ 
+}
+
+.image-baby-cat,
+.image-baby-dog {
+    width: 100%;
+    /* Limita el ancho máximo de las imágenes */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    object-fit: contain;
+    /* Asegura que las imágenes se ajusten manteniendo su relación de aspecto */
+
+}
+/* Estilos para el contenedor del botón de volver */
+.button-back-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra el botón */
+   }
+
+.button-back {
+    background-color: #5C4B51;
+    /* Color de fondo para volver */
+    /*margin-top: 20px; /* Aumenta el margen superior en 10px */
+    border-radius: 25px;
+   
+    width: 100px;
+    height: 30px;
+    /* Ajusta la altura según necesites */
+    margin: 0 10px;
+    /* Aplica margen a los lados para separar las imágenes del botón */
+    transition: background-color 0.3s ease;
+    /* Transición suave al cambiar el color de fondo */
+    padding: 5px 10px; /* Ajusta el padding para hacer el botón más pequeño */
+    font-size:  14px;
+}
+
+.button-back:hover {
+    background-color: #d32f2f;
+    /* Cambia el color de fondo al pasar el ratón */
+}
+
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Contenedor para los botones de iniciar sesión y registrarse */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    /* Separa los botones */
+    width: 80%;
+    /* Ajusta el ancho según necesites */
+    margin: 10px auto;
+    /* Centra el contenedor y aplica margen arriba y abajo */
+}
+
+.form-group button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-group button:hover {
+    opacity: 0.8;
+}
+
+/* Estilos para el botón de volver */
+.back-button {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

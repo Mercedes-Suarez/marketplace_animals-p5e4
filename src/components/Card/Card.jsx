@@ -3,23 +3,25 @@ import { Link } from 'react-router-dom'; // Asegúrate de importar Link de 'reac
 import ProductHandler from "../../handler/ProductHandler";
 import './card.css'
 
-function Card({ selectedCategory, selectedSubcategory }) {
+function Card({ selectedCategory, selectedSubcategory, product }) {
  const [products, setProducts] = useState([]);
- const [liked, setLiked] = useState(false);
+
   
  useEffect(() => {
     // Solo necesitas este useEffect para obtener y filtrar los productos
-    ProductHandler.getProducts(selectedCategory, selectedSubcategory).then(filteredProducts => {
+    ProductHandler.getFilteredProducts(selectedCategory, selectedSubcategory).then(filteredProducts => {
       setProducts(filteredProducts);
     });
  }, [selectedCategory, selectedSubcategory]); // Dependencias del efecto
+
+
 
  return (
     <div className="product-container">
       {products.map((product, index) => (
         <div key={index} className="card">
           <Link to={`/products/${product.id}`} state={{ product }}>            
-            <div className='image-container'>
+            <div className='product-image-container'>
               <img
                 src={product.productImage}
                 alt={product.productName}
@@ -31,7 +33,7 @@ function Card({ selectedCategory, selectedSubcategory }) {
           </Link>
               <div className="product-details">
                 <h3 className="product-title">{product.productName}</h3>
-                <p className="product-description">{product.productDescription}</p>
+                {/* <p className="product-description">{product.productDescription}</p> */}
                 <div className="price-details">
                   <span className="price">{product.productPrice?.monto} {product.productPrice?.moneda}</span>
                   <button className="like-button">

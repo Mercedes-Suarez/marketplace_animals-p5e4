@@ -19,7 +19,6 @@ function Product() {
 
  return (
     <>
-      <Navbar />
       <ProductDetail />
       <hr style={{
         border: "none",

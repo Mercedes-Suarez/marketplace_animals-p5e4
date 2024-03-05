@@ -16,6 +16,10 @@ const Navbar = () => {
     navigate('/'); 
  };
 
+ const navigateToMyProducts = () => {
+    navigate('/myProducts'); 
+ };
+
  
  useEffect(() => {
     if (email) {
@@ -41,7 +45,7 @@ const Navbar = () => {
         <img src="\public\images\userIcon.svg" alt="user" />
         {isAuthenticated ? (
           <>
-            <p>{userName}</p>
+            <span onClick={navigateToMyProducts} className="linktomyProducts">{userName}</span>
             <button onClick={handleLogout}>logout</button>
           </>
         ) : (

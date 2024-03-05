@@ -44,6 +44,14 @@
     color: #5C4B51;
 }
 
+.linktomyProducts {
+    cursor: pointer;
+    color: #5C4B51;
+    text-decoration: underline;
+    text-decoration-color: #5C4B51;
+    text-decoration-thickness: 3px;
+    }
+
 .loginOptions button {
     background-color: #5C4B51;
     font-family: "Inria Sans", sans-serif;

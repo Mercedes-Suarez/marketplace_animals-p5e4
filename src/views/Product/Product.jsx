@@ -21,6 +21,13 @@ function Product() {
     <>
       <Navbar />
       <ProductDetail />
+      <hr style={{
+        border: "none",
+        borderTop: "1px solid #5C4B51", // Color de la raya
+        width: "1030px", // Anchura de la raya
+        marginTop: "100px", // Margen superior
+        marginBottom: "80px" // Margen inferior
+      }} />
       <Suggestions selectedProduct={selectedProduct} />
       <Footer />
     </>

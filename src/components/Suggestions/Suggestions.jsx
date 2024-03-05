@@ -18,11 +18,11 @@ function Suggestions({ selectedProduct }) {
         if (selectedProduct) {
             ProductHandler.getFilteredProducts(selectedProduct.productCategory, selectedProduct.productSubcategory)
                 .then(filteredProducts => {
-                    // Filtrar para excluir el producto seleccionado
+                    
                     const filteredProductsExcludingSelected = filteredProducts.filter(product => product.id !== selectedProduct.id);
-                    // Mezclar los productos filtrados aleatoriamente
+                    
                     shuffleArray(filteredProductsExcludingSelected);
-                    // Limitar a 4 productos
+                    
                     const filteredAndLimitedProducts = filteredProductsExcludingSelected.slice(0, 4);
                     setRelatedProducts(filteredAndLimitedProducts);
                 });

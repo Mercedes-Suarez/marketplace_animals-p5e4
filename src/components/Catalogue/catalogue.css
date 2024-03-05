@@ -83,11 +83,11 @@
     display: block;
     width: 100%;
     height: 2px;
-    background-color: #5C4B51; /* Cambia el color según prefieras */
+    background-color: #5C4B51; 
     margin-top: 5px;
 }
 
 .subcategories-buttons.selected {
-    background-color: #5C7F77; /* Cambia el color según prefieras */
-    color: #FDFCF7; /* Cambia el color del texto según prefieras */
+    background-color: #5C7F77; 
+    color: #FDFCF7;
 }

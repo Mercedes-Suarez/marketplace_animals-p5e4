@@ -1,5 +1,5 @@
 import  { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'; // Asegúrate de importar Link de 'react-router-dom'
+import { Link } from 'react-router-dom'; 
 import ProductHandler from "../../handler/ProductHandler";
 import './card.css'
 
@@ -8,11 +8,10 @@ function Card({ selectedCategory, selectedSubcategory, product }) {
 
   
  useEffect(() => {
-    // Solo necesitas este useEffect para obtener y filtrar los productos
     ProductHandler.getFilteredProducts(selectedCategory, selectedSubcategory).then(filteredProducts => {
       setProducts(filteredProducts);
     });
- }, [selectedCategory, selectedSubcategory]); // Dependencias del efecto
+ }, [selectedCategory, selectedSubcategory]); 
 
 
 
@@ -33,7 +32,6 @@ function Card({ selectedCategory, selectedSubcategory, product }) {
           </Link>
               <div className="product-details">
                 <h3 className="product-title">{product.productName}</h3>
-                {/* <p className="product-description">{product.productDescription}</p> */}
                 <div className="price-details">
                   <span className="price">{product.productPrice?.monto} {product.productPrice?.moneda}</span>
                   <button className="like-button">

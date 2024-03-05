@@ -80,3 +80,58 @@
     position: relative;
     right: 255px;
    } 
+
+@media screen and (max-width: 700px) {
+    .navbar {
+        font-size: 16px;
+        padding: 0px 30px 0px 30px;
+    }
+
+    .logoNavbar {
+        width: 140px;
+    }
+    
+    .menuNavbar {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;      
+    }
+
+    .loginOptions {
+        gap: 10px;
+    }
+
+    .cartFind {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+}
+
+@media screen and (max-width: 430px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        gap: 10px;
+        padding: 0px 30px 0px 30px;
+    }
+
+    .logoNavbar {
+        margin-top: 20px;}
+
+    .menuNavbar {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+    }
+
+    .cartFind {
+        display: none;
+    }
+
+    .loginOptions {
+        margin-bottom: 20px;
+    }
+}

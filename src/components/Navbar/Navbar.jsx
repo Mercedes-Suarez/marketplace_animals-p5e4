@@ -34,7 +34,7 @@ const Navbar = () => {
 
  return (
     <nav className="navbar">
-      <img src="\public\images\logooscuro.svg" alt="logo" />
+      <img src="\public\images\logooscuro.svg" className="logoNavbar" alt="logo" />
 
       <section className="menuNavbar">
         <NavLink className="myNavLink" activeClassName="myActiveNavLink" to="/">home</NavLink>

@@ -89,3 +89,66 @@ footer {
 .buttonbox :hover {
     cursor: pointer;
 }
+
+@media screen and (max-width: 700px) {
+    .homeServices {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .homeProducts {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 50px;
+
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+   
+    .infoHeader {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 200px;
+        background-color: #8EBEB2;
+        background-image: url("images/pattern.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        padding-right: 50px;
+        padding-left: 50px;
+        margin-top: -4px;
+    }
+
+    .title2Home {
+        font-size: 30px;
+        padding-top: 20px;
+        font-family: "Inria Sans", sans-serif;
+    }
+
+    .infoServices {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;    
+        margin-left: 40px;
+        margin-right: 40px;
+        align-self: center;
+    
+    }
+
+    .infoProducts {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;    
+        margin-left: 40px;
+        margin-right: 40px;
+        align-self: center;
+    }
+
+}

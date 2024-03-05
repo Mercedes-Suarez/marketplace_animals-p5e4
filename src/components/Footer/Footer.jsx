@@ -19,7 +19,7 @@ function Footer() {
             <p>registro</p>
           </div>
         </section>
-        <img src="\public\images\logoclaro.svg" alt="logo" />
+        <img src="\public\images\logoclaro.svg" className="logoFooter" alt="logo" />
         <div className="legal">
           <p>politica de privacidad</p>
           <p>aviso legal</p>

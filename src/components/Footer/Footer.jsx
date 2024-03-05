@@ -26,7 +26,7 @@ function Footer() {
         </div>
       </section>
       <section className="footerred">
-        <h4>desarrollado por Grupo 4</h4>
+        <h4>desarrollado por Grupo 4 Creations</h4>
       </section>
     </>
   );

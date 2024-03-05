@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'; // Asegúrate de importar Link de 'react-router-dom'
 import ProductHandler from "../../handler/ProductHandler";
 import './card.css'
@@ -26,7 +26,7 @@ function Card({ selectedCategory, selectedSubcategory, product }) {
                 src={product.productImage}
                 alt={product.productName}
               />
-              <div className='overlay'>
+              <div className="overlay">
                 Ver más
               </div>
             </div>

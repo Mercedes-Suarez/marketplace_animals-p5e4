@@ -1,9 +1,9 @@
-import Catalogue from "../../components/Catalogue/Catalogue";
+import Search from "../../components/Search/Search";
 import Footer from "../../components/Footer/Footer";
 function CatalogueView() {
     return (
         <>
-            <Catalogue />
+            <Search />
             <Footer />
         </>
     )

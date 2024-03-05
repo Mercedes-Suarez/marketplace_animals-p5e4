@@ -1,4 +1,4 @@
-import UserService from "../service/userService";
+import UserService from "../service/UserService";
 
 export const UserHandler = {
     async getUsers() {

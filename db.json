@@ -15,9 +15,7 @@
         "monto": 12,
         "moneda": "€"
       },
-      "productCategory": "gato",
-      "productSubcategory": "camas",
-      "id": "ffcf"
+      "id": "6752"
     },
     {
       "productImage": "/images/bedcat2.png",
@@ -27,9 +25,7 @@
         "monto": 9.5,
         "moneda": "€"
       },
-      "productCategory": "gato",
-      "productSubcategory": "camas",
-      "id": "6ffa"
+      "id": "753b"
     },
     {
       "productImage": "/images/beddog.png",
@@ -39,9 +35,7 @@
         "monto": 14,
         "moneda": "€"
       },
-      "productCategory": "perro",
-      "productSubcategory": "camas",
-      "id": "6ac9"
+      "id": "1596"
     },
     {
       "productImage": "/images/beddog2.png",
@@ -51,9 +45,7 @@
         "monto": 11.75,
         "moneda": "€"
       },
-      "productCategory": "perro",
-      "productSubcategory": "camas",
-      "id": "4b50"
+      "id": "a53f"
     },
     {
       "productImage": "/images/grooming.png",
@@ -63,9 +55,7 @@
         "monto": 5,
         "moneda": "€"
       },
-      "productCategory": "gato",
-      "productSubcategory": "juguetes",
-      "id": "2f83"
+      "id": "f1dc"
     },
     {
       "productImage": "/images/grooming2.png",
@@ -75,9 +65,7 @@
         "monto": 7.25,
         "moneda": "€"
       },
-      "productCategory": "gato",
-      "productSubcategory": "juguetes",
-      "id": "c969"
+      "id": "5e6e"
     },
     {
       "productImage": "/images/grooming3.png",
@@ -87,9 +75,7 @@
         "monto": 4.75,
         "moneda": "€"
       },
-      "productCategory": "gato",
-      "productSubcategory": "juguetes",
-      "id": "abf9"
+      "id": "759b"
     },
     {
       "productImage": "/images/grooming4.png",
@@ -99,9 +85,7 @@
         "monto": 6.9,
         "moneda": "€"
       },
-      "productCategory": "gato",
-      "productSubcategory": "juguetes",
-      "id": "6031"
+      "id": "a8dd"
     },
     {
       "productImage": "/images/leash.png",
@@ -111,9 +95,7 @@
         "monto": 8,
         "moneda": "€"
       },
-      "productCategory": "perro",
-      "productSubcategory": "correas",
-      "id": "ca82"
+      "id": "48b0"
     },
     {
       "productImage": "/images/leash2.png",
@@ -123,9 +105,7 @@
         "monto": 10.5,
         "moneda": "€"
       },
-      "productCategory": "perro",
-      "productSubcategory": "correas",
-      "id": "c4d8"
+      "id": "59cf"
     },
     {
       "productImage": "/images/leash3.png",
@@ -135,9 +115,7 @@
         "monto": 7,
         "moneda": "€"
       },
-      "productCategory": "perro",
-      "productSubcategory": "correas",
-      "id": "be5c"
+      "id": "3838"
     },
     {
       "productImage": "/images/leash4.png",
@@ -147,9 +125,7 @@
         "monto": 9.25,
         "moneda": "€"
       },
-      "productCategory": "perro",
-      "productSubcategory": "correas",
-      "id": "cf78"
+      "id": "253a"
     },
     {
       "productImage": "/images/toy_cat.png",
@@ -159,9 +135,7 @@
         "monto": 3.99,
         "moneda": "€"
       },
-      "productCategory": "gato",
-      "productSubcategory": "juguetes",
-      "id": "f90f"
+      "id": "058e"
     },
     {
       "productImage": "/images/toy_cat2.png",
@@ -171,9 +145,7 @@
         "monto": 6.75,
         "moneda": "€"
       },
-      "productCategory": "gato",
-      "productSubcategory": "juguetes",
-      "id": "b4ea"
+      "id": "83c9"
     },
     {
       "productImage": "/images/toy_cat3.png",
@@ -183,9 +155,7 @@
         "monto": 4.25,
         "moneda": "€"
       },
-      "productCategory": "gato",
-      "productSubcategory": "juguetes",
-      "id": "479c"
+      "id": "7953"
     },
     {
       "productImage": "/images/toy_cat4.png",
@@ -195,9 +165,7 @@
         "monto": 5.6,
         "moneda": "€"
       },
-      "productCategory": "gato",
-      "productSubcategory": "juguetes",
-      "id": "169d"
+      "id": "7edd"
     },
     {
       "productImage": "/images/toy_dog.png",
@@ -207,9 +175,7 @@
         "monto": 7.2,
         "moneda": "€"
       },
-      "productCategory": "perro",
-      "productSubcategory": "juguetes",
-      "id": "e604"
+      "id": "72fd"
     },
     {
       "productImage": "/images/toy_dog2.png",
@@ -219,9 +185,111 @@
         "monto": 8.99,
         "moneda": "€"
       },
+      "id": "1638"
+    },
+    {
+      "id": "e99f",
+      "productName": "kjnkn",
+      "productDescription": "knkj",
+      "productPrice": "1",
+      "productStock": "2",
       "productCategory": "perro",
-      "productSubcategory": "juguetes",
-      "id": "9cc1"
+      "productSubcategory": "chuches",
+      "productImage": "j"
+    },
+    {
+      "id": "f63f",
+      "productName": "jeje",
+      "productDescription": "jiji",
+      "productPrice": "5",
+      "productStock": "8",
+      "productCategory": "",
+      "productSubcategory": ""
+    },
+    {
+      "id": "92e7",
+      "productName": "jeje",
+      "productDescription": "jiji",
+      "productPrice": "8",
+      "productStock": "8",
+      "productCategory": "gato",
+      "productSubcategory": "juguetes"
+    },
+    {
+      "id": "0003",
+      "productName": "jnkj",
+      "productDescription": "knkj",
+      "productPrice": "5",
+      "productStock": "5",
+      "productImage": {
+        "0": {}
+      },
+      "productCategory": "gato",
+      "productSubcategory": "juguetes"
+    },
+    {
+      "id": "efcb",
+      "productName": "nk",
+      "productDescription": "knjn",
+      "productPrice": "8",
+      "productStock": "8",
+      "productImage": {
+        "0": {}
+      },
+      "productCategory": "gato",
+      "productSubcategory": "juguetes"
+    },
+    {
+      "id": "2ee0",
+      "productName": "jn",
+      "productDescription": "njkn",
+      "productPrice": "5",
+      "productStock": "5",
+      "productImage": {
+        "0": {}
+      },
+      "productCategory": "gato",
+      "productSubcategory": "juguetes"
+    },
+    {
+      "id": "c464",
+      "productName": "oo",
+      "productDescription": "ll",
+      "productPrice": "7",
+      "productStock": "7",
+      "productImage": "https://res.cloudinary.com/dchd7k6oh/image/upload/v1709559618/hirhiseduatwgxbdh1yw.png",
+      "productCategory": "gato",
+      "productSubcategory": "juguetes"
+    },
+    {
+      "id": "abd3",
+      "productName": "lala",
+      "productDescription": "lala",
+      "productPrice": "6",
+      "productStock": "6",
+      "productImage": "https://res.cloudinary.com/dchd7k6oh/image/upload/v1709559796/fdpmrsxems2rtn9luidn.jpg",
+      "productCategory": "perro",
+      "productSubcategory": "chuches"
+    },
+    {
+      "id": "60ed",
+      "productName": "lala",
+      "productDescription": "lala",
+      "productPrice": "8",
+      "productStock": "8",
+      "productImage": "https://res.cloudinary.com/dchd7k6oh/image/upload/v1709559879/whsl6eqz3buhlpr1drq1.png",
+      "productCategory": "perro",
+      "productSubcategory": "juguetes"
+    },
+    {
+      "id": "56a6",
+      "productName": "lola",
+      "productDescription": "bio",
+      "productPrice": "5",
+      "productStock": "8",
+      "productImage": "https://res.cloudinary.com/dchd7k6oh/image/upload/v1709627005/qmumlk4onotxpuxmo8ex.jpg",
+      "productCategory": "gato",
+      "productSubcategory": "juguetes"
     }
-]
+  ]
 }

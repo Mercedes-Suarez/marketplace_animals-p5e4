@@ -11,12 +11,16 @@
     "api": "json-server --watch db.json"
   },
   "dependencies": {
+    "@cloudinary/react": "^1.13.0",
+    "@cloudinary/url-gen": "^1.18.0",
     "axios": "^1.6.7",
+    "cloudinary": "^2.0.1",
     "json-server": "^1.0.0-alpha.23",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.50.1",
-    "react-router-dom": "^6.22.2"
+    "react-router-dom": "^6.22.1",
+    "react-scripts": "^3.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.55",

@@ -81,23 +81,23 @@ function Form() {
           {errors.productName && <span>{errors.productName.message}</span>}
         </div>
 
-        <div className="form-input">
-          <label htmlFor="productDescription"></label>
-          <input
-            type="text"
-            placeholder="Descripción del producto"
-            id="productDescription"
-            {...register("productDescription", {
-              required: {
-                value: true,
-                message: "E-mail is required, please.",
-              },
-            })}
-          />
-          {errors.productDescription && (
-            <span>{errors.productDescription.message}</span>
-          )}
-        </div>
+      <div className="form-input">
+        <label htmlFor="productDescription"></label>
+        <input
+          type="text"
+          placeholder="Descripción del producto"
+          id="productDescription"
+          {...register("productDescription", {
+            required: {
+              value: true,
+              message: "ProductDescription is required, please.",
+            },
+          })}
+        />
+        {errors.productDescription && (
+          <span>{errors.productDescription.message}</span>
+        )}
+      </div>
 
         <div className="input-container">
           <div className="form-input">

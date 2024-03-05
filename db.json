@@ -3,7 +3,44 @@
     {
       "id": "1",
       "userName": "admin",
+      "email": "admin@gmail.com",
       "userPassword": "admin"
+    },
+
+    { "id": "2",
+      "userName": "Mercedes",
+      "email": "jmercedes@gmail.com",
+      "userPassword": "190878"
+    },
+    {
+      "id": "3",
+      "userName": "Claudia",
+      "email": "claudia@gmail.com",
+      "userPassword": "999999"
+    },
+    {
+      "id": "4",
+      "userName": "Clara",
+      "email": "clara@gmail.com",
+      "userPassword": "888888"
+    },
+    {
+      "id": "5",
+      "userName": "Inés",
+      "email": "ines@gmail.com",
+      "userPassword": "777777"
+    },
+    {
+      "id": "6",
+      "userName": "Angy",
+      "email": "angy@gmail.com",
+      "userPassword": "444444"
+    },
+    {
+      "id": "7",
+      "userName": "Eli",
+      "email": "@gmail.com",
+      "userPassword": "555555"
     }
   ],
   "products": [
@@ -291,5 +328,5 @@
       "productCategory": "gato",
       "productSubcategory": "juguetes"
     }
-  ]
+]
 }

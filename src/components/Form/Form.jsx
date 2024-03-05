@@ -4,8 +4,8 @@ import { Cloudinary } from '@cloudinary/url-gen';
 import './form.css';
 
 import ProductHandler from '../../handler/ProductHandler';
-import { AdvancedImage } from '@cloudinary/react'; //Esto quizá no sea necesario
-import { CloudinaryConfig } from '../Config/CloudinaryConfig';
+//import { AdvancedImage } from '@cloudinary/react'; //Esto quizá no sea necesario
+//import { CloudinaryConfig } from '../Config/CloudinaryConfig';
 
 function Form() {
   const { register,

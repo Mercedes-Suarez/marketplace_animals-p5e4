@@ -19,7 +19,7 @@ function Card({ selectedCategory, selectedSubcategory }) {
       {products.map((product, index) => (
         <div key={index} className="card">
           <Link to={`/products/${product.id}`} state={{ product }}>            
-            <div className='image-container'>
+            <div className='product-image-container'>
               <img
                 src={product.productImage}
                 alt={product.productName}

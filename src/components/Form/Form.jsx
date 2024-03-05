@@ -141,7 +141,7 @@ function Form() {
             defaultValue=""
             render={({ field }) => (
               <div className="form-cat1">
-                cat1:
+                <p>cat 1:</p>
                 <label>
                   <input
                     type="radio"
@@ -172,7 +172,7 @@ function Form() {
             defaultValue=""
             render={({ field }) => (
               <div className="form-cat2">
-                cat2:
+                <p>cat 2:</p>
                 <label>
                   <input
                     type="radio"
@@ -217,11 +217,11 @@ function Form() {
           />
         </div>
 
-        <button onClick={() => handleUploadClick()}>Subir imagen</button>
+        <button className="button-upload-image" onClick={() => handleUploadClick()}>Adjuntar imagen</button>
 
         <div className="form-input">
           <label htmlFor="productImage"></label>
-          <input
+          <input className='image-input'
         type="text"
         readOnly
         name="productImage"

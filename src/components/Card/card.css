@@ -112,4 +112,15 @@
   color: #FDFCF7;
  }
  
- 
+ .like-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 30px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+ }

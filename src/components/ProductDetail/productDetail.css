@@ -66,18 +66,21 @@
     font-size: 1.1rem;
     padding: 0.3rem 2rem;
     border-radius: 25px;
+    color: #FDFCF7;
+    border: none;
 }
 
 .product-detail-info .buttons .add-to-cart-btn {
     background-color: #5C7F77;
-    color: #FDFCF7;
-    border: none;
 }
 
 .product-detail-info .buttons .stock-btn {
     background-color: #8EBEB2;
-    color: #FDFCF7;
-    border: none;
+}
+
+.product-detail-info .buttons .add-to-cart-btn:hover {
+    cursor: pointer;
+    background-color: #36524b;
 }
 
 @media screen and (max-width: 1000px) {

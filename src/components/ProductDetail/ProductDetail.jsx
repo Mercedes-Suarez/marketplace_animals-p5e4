@@ -30,7 +30,8 @@ function ProductDetail() {
             <p>{product.productDescription}</p>
             <section className="buttons">
               <button className="add-to-cart-btn">añadir al carrito</button>
-              <button className='stock-btn'>{product.productStock} uds en stock</button>
+              <button className='stock-btn'>{product.productStock} {product.productStock === 1 ? "ud en stock" : "uds en stock"}</button>
+
             </section>
           </section>
         </section>

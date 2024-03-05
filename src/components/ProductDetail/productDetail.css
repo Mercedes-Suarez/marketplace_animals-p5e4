@@ -3,6 +3,7 @@
 .product-detail-container {
     display: flex;
     justify-content: center;
+    margin-top: 2%;
 }
 
 .product-detail {

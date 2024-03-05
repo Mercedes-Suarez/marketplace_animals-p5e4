@@ -55,7 +55,8 @@
       "productStock": 1,
       "productCategory": "gato",
       "productSubcategory": "camas",
-      "id": "ffcf"
+      "id": "ffcf",
+      "userId": "1"
     },
     {
       "productImage": "/images/bedcat2.png",
@@ -68,7 +69,8 @@
       "productStock": 2,
       "productCategory": "gato",
       "productSubcategory": "camas",
-      "id": "6ffa"
+      "id": "6ffa",
+      "userId": "3"
     },
     {
       "productImage": "/images/beddog.png",
@@ -81,7 +83,8 @@
       "productStock": 3,
       "productCategory": "perro",
       "productSubcategory": "camas",
-      "id": "6ac9"
+      "id": "6ac9",
+      "userId": "2"
     },
     {
       "productImage": "/images/beddog2.png",
@@ -94,7 +97,8 @@
       "productStock": 4,
       "productCategory": "perro",
       "productSubcategory": "camas",
-      "id": "4b50"
+      "id": "4b50",
+      "userId": "4"
     },
     {
       "productImage": "/images/grooming.png",
@@ -107,7 +111,8 @@
       "productStock": 5,
       "productCategory": "gato",
       "productSubcategory": "juguetes",
-      "id": "2f83"
+      "id": "2f83",
+      "userId": "1"
     },
     {
       "productImage": "/images/grooming2.png",
@@ -120,7 +125,8 @@
       "productStock": 6,
       "productCategory": "gato",
       "productSubcategory": "juguetes",
-      "id": "c969"
+      "id": "c969",
+      "userId": "3"
     },
     {
       "productImage": "/images/grooming3.png",
@@ -133,7 +139,8 @@
       "productStock": 7,
       "productCategory": "gato",
       "productSubcategory": "juguetes",
-      "id": "abf9"
+      "id": "abf9",
+      "userId": "2"
     },
     {
       "productImage": "/images/grooming4.png",
@@ -146,7 +153,8 @@
       "productStock": 8,
       "productCategory": "gato",
       "productSubcategory": "juguetes",
-      "id": "6031"
+      "id": "6031",
+      "userId": ""
     },
     {
       "productImage": "/images/leash.png",
@@ -159,7 +167,8 @@
       "productStock": 9,
       "productCategory": "perro",
       "productSubcategory": "correas",
-      "id": "ca82"
+      "id": "ca82",
+      "userId": ""
     },
     {
       "productImage": "/images/leash2.png",
@@ -172,7 +181,8 @@
       "productStock": 10,
       "productCategory": "perro",
       "productSubcategory": "correas",
-      "id": "c4d8"
+      "id": "c4d8",
+      "userId": ""
     },
     {
       "productImage": "/images/leash3.png",
@@ -185,7 +195,8 @@
       "productStock": 11,
       "productCategory": "perro",
       "productSubcategory": "correas",
-      "id": "be5c"
+      "id": "be5c",
+      "userId": ""
     },
     {
       "productImage": "/images/leash4.png",
@@ -198,7 +209,8 @@
       "productStock": 12,
       "productCategory": "perro",
       "productSubcategory": "correas",
-      "id": "cf78"
+      "id": "cf78",
+      "userId": ""
     },
     {
       "productImage": "/images/toy_cat.png",
@@ -211,7 +223,8 @@
       "productStock": 13,
       "productCategory": "gato",
       "productSubcategory": "juguetes",
-      "id": "f90f"
+      "id": "f90f",
+      "userId": ""
     },
     {
       "productImage": "/images/toy_cat2.png",
@@ -224,7 +237,8 @@
       "productStock": 14,
       "productCategory": "gato",
       "productSubcategory": "juguetes",
-      "id": "b4ea"
+      "id": "b4ea",
+      "userId": ""
     },
     {
       "productImage": "/images/toy_cat3.png",
@@ -237,7 +251,8 @@
       "productStock": 15,
       "productCategory": "gato",
       "productSubcategory": "juguetes",
-      "id": "479c"
+      "id": "479c",
+      "userId": ""
     },
     {
       "productImage": "/images/toy_dog.png",
@@ -250,7 +265,8 @@
       "productStock": 17,
       "productCategory": "perro",
       "productSubcategory": "juguetes",
-      "id": "e604"
+      "id": "e604",
+      "userId": ""
     },
     {
       "productImage": "/images/toy_dog2.png",
@@ -263,17 +279,8 @@
       "productStock": 18,
       "productCategory": "perro",
       "productSubcategory": "juguetes",
-      "id": "9cc1"
-    },
-    {
-      "id": "a817",
-      "productName": "holi",
-      "productDescription": "holiholi",
-      "productPrice": "1",
-      "productStock": "1",
-      "productImage": "https://res.cloudinary.com/dchd7k6oh/image/upload/v1709676678/vclmesbriku9fbo151ca.png",
-      "productCategory": "perro",
-      "productSubcategory": "chuches"
+      "id": "9cc1",
+      "userId": ""
     }
   ]
 }

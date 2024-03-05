@@ -24,7 +24,7 @@ function Card({ selectedCategory, selectedSubcategory }) {
                 src={product.productImage}
                 alt={product.productName}
               />
-              <div className='overlay'>
+              <div className="overlay">
                 Ver más
               </div>
             </div>

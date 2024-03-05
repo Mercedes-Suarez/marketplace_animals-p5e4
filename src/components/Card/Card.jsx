@@ -21,7 +21,7 @@ function Card({ selectedCategory, selectedSubcategory, product }) {
       {products.map((product, index) => (
         <div key={index} className="card">
           <Link to={`/products/${product.id}`} state={{ product }}>            
-            <div className='image-container'>
+            <div className='product-image-container'>
               <img
                 src={product.productImage}
                 alt={product.productName}
@@ -33,10 +33,10 @@ function Card({ selectedCategory, selectedSubcategory, product }) {
           </Link>
               <div className="product-details">
                 <h3 className="product-title">{product.productName}</h3>
-                <p className="product-description">{product.productDescription}</p>
+                {/* <p className="product-description">{product.productDescription}</p> */}
                 <div className="price-details">
-                 <span className="price">{product.productPrice.monto} {product.productPrice.moneda}</span>
-                 <button className="like-button">
+                  <span className="price">{product.productPrice?.monto} {product.productPrice?.moneda}</span>
+                  <button className="like-button">
                     <img src="/images/heart-icon.svg" alt="Me gusta" id="heart-icon" />
                  </button>
                 </div>

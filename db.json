@@ -47,11 +47,12 @@
     {
       "productImage": "/images/bedcat.png",
       "productName": "Cama gato",
-      "productDescription": "Beige aterciopelado",
+      "productDescription": "Diseñada específicamente para gatos, esta cama ofrece un confort perfecto con su cobertor acolchado y un sistema de ventilación integrado para mantener a tu mascota fresca y cómoda durante el día.",
       "productPrice": {
         "monto": 12,
         "moneda": "€"
       },
+      "productStock": 1,
       "productCategory": "gato",
       "productSubcategory": "camas",
       "id": "ffcf"
@@ -59,11 +60,12 @@
     {
       "productImage": "/images/bedcat2.png",
       "productName": "Cama gatito",
-      "productDescription": "Lavable para mascotas",
+      "productDescription": "Esta cama para gatos es ideal para mascotas pequeñas y ágiles, gracias a su tamaño compacto y diseño ergonómico que facilita el juego y la exploración.",
       "productPrice": {
         "monto": 9.5,
         "moneda": "€"
       },
+      "productStock": 2,
       "productCategory": "gato",
       "productSubcategory": "camas",
       "id": "6ffa"
@@ -71,11 +73,12 @@
     {
       "productImage": "/images/beddog.png",
       "productName": "Cama perro",
-      "productDescription": "Cómoda y resistente",
+      "productDescription": "Diseñada con robustez y durabilidad, esta cama para perros ofrece un soporte sólido y una estructura resistente que soportará el peso de tu mascota.",
       "productPrice": {
         "monto": 14,
         "moneda": "€"
       },
+      "productStock": 3,
       "productCategory": "perro",
       "productSubcategory": "camas",
       "id": "6ac9"
@@ -83,11 +86,12 @@
     {
       "productImage": "/images/beddog2.png",
       "productName": "Cama perro",
-      "productDescription": "Lavable y confortable",
+      "productDescription": "Con un diseño moderno y funcional, esta cama para perros incluye un sistema de ventilación y un cobertor de microfibra que mantiene a tu mascota fresca y cómoda.",
       "productPrice": {
         "monto": 11.75,
         "moneda": "€"
       },
+      "productStock": 4,
       "productCategory": "perro",
       "productSubcategory": "camas",
       "id": "4b50"
@@ -95,11 +99,12 @@
     {
       "productImage": "/images/grooming.png",
       "productName": "Cepillo",
-      "productDescription": "Suave y resistente",
+      "productDescription": "Este cepillo de goma suave está diseñado para mascotas de pelo corto, ofreciendo una limpieza suave y sin dolor que preserva el pelaje natural de tu mascota.",
       "productPrice": {
         "monto": 5,
         "moneda": "€"
       },
+      "productStock": 5,
       "productCategory": "gato",
       "productSubcategory": "juguetes",
       "id": "2f83"
@@ -107,11 +112,12 @@
     {
       "productImage": "/images/grooming2.png",
       "productName": "Cepillo grooming",
-      "productDescription": "Madera natural",
+      "productDescription": "Hecho con madera natural, este cepillo ofrece un toque de lujo y una limpieza suave que mantiene el pelaje de tu mascota brillante y saludable.",
       "productPrice": {
         "monto": 7.25,
         "moneda": "€"
       },
+      "productStock": 6,
       "productCategory": "gato",
       "productSubcategory": "juguetes",
       "id": "c969"
@@ -119,11 +125,12 @@
     {
       "productImage": "/images/grooming3.png",
       "productName": "Guante grooming",
-      "productDescription": "Fácil de usar",
+      "productDescription": "Este guante de goma es fácil de usar y perfecto para mascotas de pelo largo, ofreciendo una limpieza suave que no causa dolor ni irritación.",
       "productPrice": {
         "monto": 4.75,
         "moneda": "€"
       },
+      "productStock": 7,
       "productCategory": "gato",
       "productSubcategory": "juguetes",
       "id": "abf9"
@@ -131,11 +138,12 @@
     {
       "productImage": "/images/grooming4.png",
       "productName": "Peine",
-      "productDescription": "Compacto y ergonómico",
+      "productDescription": "Este peine compacto y ergonómico es ideal para mascotas de pelo largo, facilitando la limpieza y manteniendo el pelaje suave y bien cuidado.",
       "productPrice": {
         "monto": 6.9,
         "moneda": "€"
       },
+      "productStock": 8,
       "productCategory": "gato",
       "productSubcategory": "juguetes",
       "id": "6031"
@@ -143,11 +151,12 @@
     {
       "productImage": "/images/leash.png",
       "productName": "Correa",
-      "productDescription": "Resistente y ajustable",
+      "productDescription": "Hecha con material resistente y ajustable, esta correa es perfecta para paseos y actividades al aire libre, manteniendo a tu mascota segura y cómoda.",
       "productPrice": {
         "monto": 8,
         "moneda": "€"
       },
+      "productStock": 9,
       "productCategory": "perro",
       "productSubcategory": "correas",
       "id": "ca82"
@@ -155,11 +164,12 @@
     {
       "productImage": "/images/leash2.png",
       "productName": "Correa reflectante",
-      "productDescription": "Segura y visible",
+      "productDescription": "Esta correa reflectante es segura y visible, perfecta para paseos nocturnos, ayudando a prevenir accidentes y asegurando la seguridad de tu mascota.",
       "productPrice": {
         "monto": 10.5,
         "moneda": "€"
       },
+      "productStock": 10,
       "productCategory": "perro",
       "productSubcategory": "correas",
       "id": "c4d8"
@@ -167,11 +177,12 @@
     {
       "productImage": "/images/leash3.png",
       "productName": "Correa ligera",
-      "productDescription": "Fácil de transportar",
+      "productDescription": "Ideal para paseos cortos y actividades diarias, esta correa ligera es fácil de transportar y perfecta para mantener a tu mascota cómoda y segura.",
       "productPrice": {
         "monto": 7,
         "moneda": "€"
       },
+      "productStock": 11,
       "productCategory": "perro",
       "productSubcategory": "correas",
       "id": "be5c"
@@ -179,11 +190,12 @@
     {
       "productImage": "/images/leash4.png",
       "productName": "Correa flexible",
-      "productDescription": "Para mayor comodidad",
+      "productDescription": "Esta correa flexible ofrece mayor comodidad para tu mascota, permitiendo una libertad de movimiento mientras se mantiene segura y controlada.",
       "productPrice": {
         "monto": 9.25,
         "moneda": "€"
       },
+      "productStock": 12,
       "productCategory": "perro",
       "productSubcategory": "correas",
       "id": "cf78"
@@ -191,11 +203,12 @@
     {
       "productImage": "/images/toy_cat.png",
       "productName": "Juguete gato",
-      "productDescription": "Divertido y entretenido",
+      "productDescription": "Este juguete interactivo es perfecto para gatos curiosos, ofreciendo una diversión que mantiene a tu mascota entretida y activa.",
       "productPrice": {
         "monto": 3.99,
         "moneda": "€"
       },
+      "productStock": 13,
       "productCategory": "gato",
       "productSubcategory": "juguetes",
       "id": "f90f"
@@ -203,11 +216,12 @@
     {
       "productImage": "/images/toy_cat2.png",
       "productName": "Juguete interactivo",
-      "productDescription": "Para estimular el juego",
+      "productDescription": "Este juguete interactivo es diseñado para estimular el juego y la exploración, ofreciendo una experiencia de juego única y atractiva para gatos.",
       "productPrice": {
         "monto": 6.75,
         "moneda": "€"
       },
+      "productStock": 14,
       "productCategory": "gato",
       "productSubcategory": "juguetes",
       "id": "b4ea"
@@ -215,35 +229,25 @@
     {
       "productImage": "/images/toy_cat3.png",
       "productName": "Pelota suave",
-      "productDescription": "Para horas de diversión",
+      "productDescription": "Esta pelota suave es perfecta para horas de diversión, ofreciendo una textura suave que no causa irritación en el pelaje de tu gato.",
       "productPrice": {
         "monto": 4.25,
         "moneda": "€"
       },
+      "productStock": 15,
       "productCategory": "gato",
       "productSubcategory": "juguetes",
       "id": "479c"
     },
     {
-      "productImage": "/images/toy_cat4.png",
-      "productName": "Ratón de peluche",
-      "productDescription": "Para gatos curiosos",
-      "productPrice": {
-        "monto": 5.6,
-        "moneda": "€"
-      },
-      "productCategory": "gato",
-      "productSubcategory": "juguetes",
-      "id": "169d"
-    },
-    {
       "productImage": "/images/toy_dog.png",
       "productName": "Pelota resistente",
-      "productDescription": "Para perros activos",
+      "productDescription": "Esta pelota resistente es perfecta para perros activos, ofreciendo una jugabilidad segura y divertida que estimula la salud y el ejercicio de tu mascota.",
       "productPrice": {
         "monto": 7.2,
         "moneda": "€"
       },
+      "productStock": 17,
       "productCategory": "perro",
       "productSubcategory": "juguetes",
       "id": "e604"
@@ -251,14 +255,15 @@
     {
       "productImage": "/images/toy_dog2.png",
       "productName": "Hueso interactivo",
-      "productDescription": "Para juego y limpieza dental",
+      "productDescription": "Este hueso interactivo es ideal para perros que buscan mantener su mente y cuerpo ocupados, ofreciendo un desafío que mantiene a tu mascota mentalmente estimulada y físicamente activa.",
       "productPrice": {
         "monto": 8.99,
         "moneda": "€"
       },
+      "productStock": 18,
       "productCategory": "perro",
       "productSubcategory": "juguetes",
       "id": "9cc1"
     }
-]
+  ]
 }

@@ -1,11 +1,20 @@
-import React from "react";
-import { useForm, Controller } from "react-hook-form";
-import ProductHandler from "../../handler/ProductHandler";
-import "./form.css";
-import { Cloudinary } from "@cloudinary/url-gen";
+import React, { useState } from 'react';
+import { useForm, Controller } from 'react-hook-form';
+import { Cloudinary } from '@cloudinary/url-gen';
+import './form.css';
+
+import ProductHandler from '../../handler/ProductHandler';
+//import { AdvancedImage } from '@cloudinary/react'; //Esto quizá no sea necesario
+//import { CloudinaryConfig } from '../Config/CloudinaryConfig';
 
 function Form() {
-  const { register, handleSubmit: pHandleSubmit, formState: { errors }, watch, control, reset } = useForm();
+  const { register,
+    handleSubmit: pHandleSubmit,
+    formState: { errors },
+    watch,
+    control,
+    reset
+  } = useForm();
 
   /*
     Some useForm() options:
@@ -20,219 +29,221 @@ function Form() {
     - setValue: Propiedad/función que permite establecer el valor de un input.
     */
 
-  // const [imageUrl, setImageUrl] = useState('');
+  const cld = new Cloudinary({ cloudName: 'dchd7k6oh' });
+  const [imageUrl, setImageUrl] = useState('');
+  // const [submittedData, setSubmittedData] = useState(null);
 
-  // const handleUploadClick = () => {
-  //   const widget = window.cloudinary.createUploadWidget({
-  //     cloudName: 'lerolore',
-  //     uploadPreset: 'lore',
-  //   }, (error, result) => {
-  //     if (result.event === 'success') {
-  //       const url = result.info.secure_url;
-  //       console.log(url);
-  //       setImageUrl(url);
-  //     }
-  //   })
-  //   widget.open();
-  // };
+  const handleUploadClick = () => {
+    const widget = window.cloudinary.createUploadWidget({
+      cloudName: 'dchd7k6oh',
+      uploadPreset: 'bzwsb3w3',
+    },
+      (error, result) => {
+        if (result.event === 'success') {
+          const url = result.info.secure_url;
+          console.log(url);
+          setImageUrl(url);
+          setValue("productImage", url);
+          setImageUrl("");
+        }
+      });
+    widget.open();
+  };
 
-  const onSubmit =
-    pHandleSubmit((data) => {
-      ProductHandler.submitProduct(data);
-      reset(); // Llamada directa a la función
-    });
+  const onSubmit = pHandleSubmit((data) => {
+    ProductHandler.submitProduct(data);
+    reset();
+    // setSubmittedData(data);
+  });
 
   return (
-    <form className="form-container" onSubmit={onSubmit}>
-      <h1>añade un nuevo producto</h1>
+    <div>
+      <form className="form-container" onSubmit={onSubmit}>
+        <h1>Añade un nuevo producto</h1>
 
-      <div className="form-input">
-        <label htmlFor="productName"></label>
-        <input
-          type="text"
-          placeholder="Nombre del producto"
-          id="productName"
-          {...register("productName", {
-            required: {
-              value: true,
-              message: "Name is required, please.",
-            },
-            minLength: {
-              value: 2,
-              message: "Name must be at least 2 characters.",
-            },
-          })}
-        />
-        {errors.productName && <span>{errors.productName.message}</span>}
-      </div>
-
-      <div className="form-input">
-        <label htmlFor="productDescription"></label>
-        <input
-          type="text"
-          placeholder="Descripción del producto"
-          id="productDescription"
-          {...register("productDescription", {
-            required: {
-              value: true,
-              message: "ProductDescription is required, please.",
-            },
-          })}
-        />
-        {errors.productDescription && (
-          <span>{errors.productDescription.message}</span>
-        )}
-      </div>
-
-      <div className="input-container">
         <div className="form-input">
-          <label htmlFor="productPrice"></label>
+          <label htmlFor="productName"></label>
           <input
-            type="number"
-            placeholder="Precio"
-            id="productPrice"
-            {...register("productPrice", {
+            type="text"
+            placeholder="Nombre del producto"
+            id="productName"
+            {...register("productName", {
               required: {
                 value: true,
-                message: "Price is required, please.",
+                message: "Name is required, please.",
+              },
+              minLength: {
+                value: 2,
+                message: "Name must be at least 2 characters.",
               },
             })}
           />
-          {errors.productPrice && <span>{errors.productPrice.message}</span>}
+          {errors.productName && <span>{errors.productName.message}</span>}
         </div>
 
         <div className="form-input">
-          <label htmlFor="productStock"></label>
+          <label htmlFor="productDescription"></label>
           <input
-            type="number"
-            placeholder="Stock"
-            id="productStock"
-            {...register("productStock", {
+            type="text"
+            placeholder="Descripción del producto"
+            id="productDescription"
+            {...register("productDescription", {
               required: {
                 value: true,
-                message: "Stock is required, please.",
+                message: "E-mail is required, please.",
               },
-              validate: (value) => { return value === 0 ? "Stock must be equal to  0." : true; }
             })}
           />
-          {errors.productStock && <span>{errors.productStock.message}</span>}
+          {errors.productDescription && (
+            <span>{errors.productDescription.message}</span>
+          )}
         </div>
-      </div>
 
-      <div className="form-categories">
-      <Controller
-        name="productCategory"
-        control={control}
-        defaultValue=""
-        render={({ field }) => (
-          <div className="form-cat1">
-            cat1:
-            <label>
-              <input
-                type="radio"
-                value="gato"
-                checked={field.value === "gato"}
-                onChange={(e) => field.onChange(e.target.value)}
-              />
-              Gato
-            </label>
-
-            <label>
-              <input
-                type="radio"
-                value="perro"
-                checked={field.value === "perro"}
-                onChange={(e) => field.onChange(e.target.value)}
-              />
-              Perro
-            </label>
+        <div className="input-container">
+          <div className="form-input">
+            <label htmlFor="productPrice"></label>
+            <input
+              type="number"
+              placeholder="Precio"
+              id="productPrice"
+              {...register("productPrice", {
+                required: {
+                  value: true,
+                  message: "Price is required, please.",
+                },
+              })}
+            />
+            {errors.productPrice && <span>{errors.productPrice.message}</span>}
           </div>
-        )}
-      />
 
-
-      <Controller
-        name="productSubcategory"
-        control={control}
-        defaultValue=""
-        render={({ field }) => (
-          <div className="form-cat2">
-            cat2:
-            <label>
-              <input
-                type="radio"
-                value="juguetes"
-                checked={field.value === "juguetes"}
-                onChange={(e) => field.onChange(e.target.value)}
-              />
-              Juguetes
-            </label>
-
-            <label>
-              <input
-                type="radio"
-                value="chuches"
-                checked={field.value === "chuches"}
-                onChange={(e) => field.onChange(e.target.value)}
-              />
-              Chuches
-            </label>
-
-            <label>
-              <input
-                type="radio"
-                value="camas"
-                checked={field.value === "camas"}
-                onChange={(e) => field.onChange(e.target.value)}
-              />
-              Camas
-            </label>
-
-            <label>
-              <input
-                type="radio"
-                value="correas"
-                checked={field.value === "correas"}
-                onChange={(e) => field.onChange(e.target.value)}
-              />
-              Correas
-            </label>
+          <div className="form-input">
+            <label htmlFor="productStock"></label>
+            <input
+              type="number"
+              placeholder="Stock"
+              id="productStock"
+              {...register("productStock", {
+                required: {
+                  value: true,
+                  message: "Stock is required, please.",
+                },
+                validate: (value) => { return value === 0 ? "Stock must be equal to  0." : true; }
+              })}
+            />
+            {errors.productStock && <span>{errors.productStock.message}</span>}
           </div>
-        )}
-      />
-      </div>
+        </div>
 
-      {/* <div className="form-input">
-        <label htmlFor="productImage"></label>
-        <input
-          value={imageUrl}
-          type="file"
-          placeholder="Imágenes"
-          id="productImage"
-          {...register("productImage", {
-            required: {
-              value: true,
-              message: "Image is required, please.",
-            },
-            validate: (value) => { return value === 0 ? "Stock must be equal to  0." : true; }
-          })}
+        <div className="form-categories">
+          <Controller
+            name="productCategory"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <div className="form-cat1">
+                cat1:
+                <label>
+                  <input
+                    type="radio"
+                    value="gato"
+                    checked={field.value === "gato"}
+                    onChange={(e) => field.onChange(e.target.value)}
+                  />
+                  Gato
+                </label>
+
+                <label>
+                  <input
+                    type="radio"
+                    value="perro"
+                    checked={field.value === "perro"}
+                    onChange={(e) => field.onChange(e.target.value)}
+                  />
+                  Perro
+                </label>
+              </div>
+            )}
+          />
+
+
+          <Controller
+            name="productSubcategory"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <div className="form-cat2">
+                cat2:
+                <label>
+                  <input
+                    type="radio"
+                    value="juguetes"
+                    checked={field.value === "juguetes"}
+                    onChange={(e) => field.onChange(e.target.value)}
+                  />
+                  Juguetes
+                </label>
+
+                <label>
+                  <input
+                    type="radio"
+                    value="chuches"
+                    checked={field.value === "chuches"}
+                    onChange={(e) => field.onChange(e.target.value)}
+                  />
+                  Chuches
+                </label>
+
+                <label>
+                  <input
+                    type="radio"
+                    value="camas"
+                    checked={field.value === "camas"}
+                    onChange={(e) => field.onChange(e.target.value)}
+                  />
+                  Camas
+                </label>
+
+                <label>
+                  <input
+                    type="radio"
+                    value="correas"
+                    checked={field.value === "correas"}
+                    onChange={(e) => field.onChange(e.target.value)}
+                  />
+                  Correas
+                </label>
+              </div>
+            )}
+          />
+        </div>
+
+        <button onClick={() => handleUploadClick()}>Subir imagen</button>
+
+        <div className="form-input">
+          <label htmlFor="productImage"></label>
+          <input
+        type="text"
+        readOnly
+        name="productImage"
+        value={imageUrl}
+        {...register("productImage", {
+          required: {
+            value: true,
+            message: "Image is required, please.",
+          },
+        })}
         />
-        {errors.productImage && <span>{errors.productImage.message}</span>}
-        <button onClick={handleUploadClick()}>Seleccionar imagen</button>
-      </div>
+          {errors.productImage && <span>{errors.productImage.message}</span>}
+        </div>
 
-      import {Cloudinary} from "@cloudinary/url-gen"; */}
+        <button className="form-button" type='submit'>
+          Añadir producto
+        </button>
+      </form>
 
-{/* const App = () => {
-  const cld = new Cloudinary({cloud: {cloudName: 'dchd7k6oh'}});
-}; */}
-
-
-
-      <button className="form-button" type="submit">añadir producto</button>
-
-    </form>
+    </div>
   );
-}
+
+};
 
 export default Form;

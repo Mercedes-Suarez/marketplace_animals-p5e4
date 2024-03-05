@@ -6,8 +6,8 @@
       "email": "admin@gmail.com",
       "userPassword": "admin"
     },
-
-    { "id": "2",
+    {
+      "id": "2",
       "userName": "Mercedes",
       "email": "jmercedes@gmail.com",
       "userPassword": "190878"
@@ -264,6 +264,16 @@
       "productCategory": "perro",
       "productSubcategory": "juguetes",
       "id": "9cc1"
+    },
+    {
+      "id": "a817",
+      "productName": "holi",
+      "productDescription": "holiholi",
+      "productPrice": "1",
+      "productStock": "1",
+      "productImage": "https://res.cloudinary.com/dchd7k6oh/image/upload/v1709676678/vclmesbriku9fbo151ca.png",
+      "productCategory": "perro",
+      "productSubcategory": "chuches"
     }
   ]
 }

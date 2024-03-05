@@ -36,7 +36,7 @@
 }
 
 .product-detail-image {
-    width: 30%;
+    width: 40%;
 }
 
 .product-detail-image img {
@@ -45,7 +45,7 @@
 }
 
 .product-detail-info {
-    width: 70%;
+    width: 60%;
     font-size: 19px;
 }
 
@@ -102,9 +102,9 @@
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
     .product-detail-image {
-        width: 70%;
+        width: 80%;
     }
     .product-detail-info .buttons {
         flex-direction: column;

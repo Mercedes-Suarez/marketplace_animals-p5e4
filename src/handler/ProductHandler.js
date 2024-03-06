@@ -13,12 +13,9 @@ export const ProductHandler = {
 
   async submitProduct(newProduct) {
     return ProductService.submitProduct(newProduct).then((response) => {
-      // Manejar la respuesta de forma específica al componente
       if (response.status === 201) {
         console.log(response.data);
       } else {
-        // Error al crear el producto
-        // Mostrar mensaje de error al usuario
         throw new Error('Error al enviar el producto');
       }
     });
@@ -34,11 +31,9 @@ export const ProductHandler = {
     return filteredProducts;
  },
 
- // Funcion de filtrado
  async getFilteredProducts(productCategory, productSubcategory) {
   let allProducts = await ProductService.getProducts();
 
-  // Aplicar filtros si se proporcionan
   if (productCategory) {
       allProducts = allProducts.filter(product => product.productCategory === productCategory);
   }
